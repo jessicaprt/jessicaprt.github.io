@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto';
+}
+
+.center
+{ text-align: center; }
+
+.Sofia-title
+{ font-family: 'Sofia'; }
+
+.nav-items 
+{ margin: 20px; 
+  font-size: 20px;
+  text-decoration: none; 
+  color: #fff; }
+
+.nav
+{ padding-top: 20px; 
+  padding-bottom: 20px; 
+  padding-left: 50px;}
+
+.header
+{ height: 70vh;
+  background-color: #999;
+  background-image: url('./assets/header_style.jpg'); 
+  background-size: cover; 
+  background-position: center }
+
+.AboutMe
+{ background-color: #abac95;
+  color: #eee; 
+  padding: 8vh 0 12vh 0; }
+
+.Highlights 
+{ background-color: #bcb8c6; 
+  padding-bottom: 8vh; }
+
+.SkillHighlights
+{ margin: 0 auto 2vh auto; 
+  text-align: center; }
+
+.skillBorder
+{ padding: 2vh; 
+  border: 2px solid #eee; }
+
+.skill 
+{ margin-top: -6vh;
+  padding: 0 3vh; }
+
+.skillContent
+{ background-color: #fff;
+  color: #555; 
+  padding: 2vh 0; }
+
+.skillDescription
+{ padding: 2vh 20px; 
+  font-size: 14px; }
+
+.skillName
+{ font-family: 'Sofia';
+  padding: 1vh 0 0.5vh 0;}
+
+.skillImage
+{ padding: 0.5vh 0 0.5vh 0; 
+  height: 34px; 
+  margin-top: 4px; }
+
+.skillWrapper {
+  margin: 2vh auto;
+  border: 1px solid #999;
+  border-radius: 22px;
+  width: 44px;
+  height: 44px;
+}
+
+.div-line
+{ height: 2px;
+  width: 100%;
+  margin: 1vh 0 1vh 0;
+  background-color: #555; }
+
+.mainBorder
+{ height: 4px;
+  background-color: #fff;}
+
+.projects 
+{ background-color: #bcb8c6; 
+  color: #fff; }
+
+.projectsContent
+{ padding: 5vh; }
