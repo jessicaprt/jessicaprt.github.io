@@ -10,8 +10,8 @@ class App extends Component {
       <div className="App">
         <Header />
         <AboutMe text={ aboutMe } />
-        <SkillHighlights skill={ skill } />
-        <Projects />
+        <SkillHighlights skill={ skills } />
+        <Projects projects={ projects }/>
       </div>
     );
   }
@@ -23,9 +23,9 @@ const aboutMe = "Hello! i'm Jessica Prieto. I graduated from University of Alber
   techniques and to keep updated with the technologies. I also have a knack for web applications  \
   building back-end services for websites and coming up with the UI/UX design ideas.";
 
-const skill = {
+const skills = {
   'A' : {
-    'name' : 'Web Development',
+    'name' : 'Web Dev',
     'imgUrl' : './assets/icons/ic_desktop.png',
     'description' : 'My first ever dev experience was creating a simple website with HTTP and CSS. \
     I then started using different frameworks such as Jquery and Bootstrap. I enjoy playing around and \
@@ -34,9 +34,9 @@ const skill = {
     internship dealing with web apps, and I also experienced dealing with databases for the web.'
   },
   'B' : {
-    'name' : 'Android Development',
+    'name' : 'Mobile Dev',
     'imgUrl' : './assets/icons/ic_phone_android.png',
-    'description' : 'Android dev is currently my favourite. Since the first time I built an ANdroid app for \
+    'description' : 'Android dev is currently my favourite. Since the first time I built an Android app for \
     one of my courses, I knew I wanted to o more. I really have gotten the hang of working with Android Studio. \
     I have already developed some of my future goals in mobile dev: first would be to explore creating a library \
     in Android to easily render views that will be most likely based on Material Design standards. At some point, \
@@ -52,6 +52,26 @@ const skill = {
     little bit of photography. I also like singing and plating instruments. Another highlight of my undergrad was joining the \
     yearly battle of the bands from my first year until my last.'
   }
+}
+
+const projects = {
+  'A' : {
+    'name' : 'Hotspot',
+    'imgUrl' : '/assets/projects/hotspot2.jpg',
+    'desc' : 'This is hotspot'
+  },
+  'B' : {
+    'name' : 'DigiExpress',
+    'imgUrl' : '/assets/projects/digiexpress2.jpg',
+    'desc' : 'bdesc'
+  },
+  'C' : {
+    'name' : 'Blog Generator',
+    'imgUrl' : '/assets/projects/blog-generator.jpg',
+    'desc' : 'cdesc'
+  },
+
+
 }
 
 export default App;

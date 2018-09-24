@@ -5,7 +5,8 @@ export class Header extends Component {
     render() {
         return (
             <div className="header">
-                <NavBar className="Navbar" />
+                <p className="navBlock navTitle purpleFont">Jessica Prieto</p>
+                <NavBar className="Navbar nav" />
             </div>
         );
     }

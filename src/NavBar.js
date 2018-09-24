@@ -8,12 +8,14 @@ export class NavBar extends React.Component {
       ['Daily', 'daily'] ];
     const navLinks = pages.map(page => {
       return (
-        <a href={'#' + page[1]} className="nav-items">
-          {page[0]}
-        </a>
+        <div>
+          <a href={'#' + page[1]} className="navItems">
+            {page[0]}
+          </a>
+        </div>
       )
     });
 
-    return <nav className="nav">{navLinks}</nav>;
+    return <nav className="navBlock nav">{navLinks}</nav>;
   }
 }

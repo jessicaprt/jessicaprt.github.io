@@ -7,7 +7,7 @@ import Col from 'react-bootstrap/lib/Col';
 export class SkillHighlights extends Component {
     render() {
         return(
-            <div className="Highlights">
+            <div className="Highlights purpleBackground">
                 <Grid className="SkillHighlights">
                     <Row>
                         <Col sm={4} className="skill"><div className="skillBorder">
