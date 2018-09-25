@@ -10,6 +10,9 @@ body {
 .purpleBackground
 { background-color: rgba(126, 106, 140, 0.7); }
 
+.champagneBackground
+{ background-color: rgba(239, 223, 187, 0.5) }
+
 .Sofia-title
 { font-family: 'Sofia'; }
 
@@ -112,30 +115,88 @@ body {
   background-color: #fff; }
 
 .projects 
-{ color: #444; }
+{ color: #fff; }
 
 .projectsContent
 { padding: 5vh; 
   text-align: center; }
 
 .projectImages
-{ width: 100%; }
+{ width: 100%; 
+  margin: 5px -30px -40px 0; }
+
+.imageWrapper
+{ padding: 10px 0; 
+  border: 3px solid rgba(126, 106, 140, 0.5); }
+
+.projectTitle
+{ margin-top: 40px; 
+  color: #7e6a8c;
+  text-align: center; }
 
 .projectItem
 { margin-top: 2vh; }
 
-.imageWrapper
-{ padding: 2vh; 
-  border: 1px solid #444; 
-  text-align: center; }
-
 .projectButton
-{ border: 1px solid #fff;
-  border-radius: 10px; 
-  background-color: #fff; 
+{ border: 2px solid rgba(126, 106, 140, 0.5);
+  background-color: rgba(0,0,0,0);
+  border-radius: 0px;
   padding: 1vh 3vh; 
-  color: #bfbecc; }
+  color: #7e6a8c; 
+  margin: 6vh 0;}
 
-.projectTitle
-{ margin: 2vh 0; 
-  text-align: center; }
+.Blog
+{ padding: 5vh 0; 
+  background-color: #ddd }
+
+.BlogItem
+{ padding: 2vh; }
+
+.blogTitle
+{ margin-bottom: 5vh }
+
+.fBlogContainer
+{ padding-left: 3vw}
+
+.fBlogImages
+{ width: 100%; 
+  margin: 0 -20px -20px 15px; }
+
+.fBlogImageWrapper
+{ padding: 10px 0;
+  border: 2.5px solid #fff}
+
+.fBlogTitle
+{ font-size: 25px; }
+
+.instagram
+{ margin: 0 auto; 
+  text-align: center; 
+  padding: 5vh 0; }
+
+.instagram ul 
+{ margin: 0 auto;
+  padding-left: 0; }
+
+.instagram li
+{ display: inline-block; }
+
+/* .instagramWrapper
+{ border: 1px solid #333; } */
+
+.instagramTitle
+{ padding-bottom: 5vh; }
+
+.instagramPosts
+{ height: 18vw;
+  width: 18vw;
+  margin: 10px 5px;
+  vertical-align: 50%;
+  overflow: hidden; }
+
+.instagramPosts img
+{ top: 0;
+  min-height: 18vw;
+  width: 18vw; }
+
+

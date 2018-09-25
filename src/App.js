@@ -3,6 +3,8 @@ import { Header } from './Header.js';
 import { AboutMe } from './AboutMe.js';
 import { SkillHighlights } from './SkillHighlights.js';
 import { Projects } from './Projects.js';
+import { Blog } from './Blog.js';
+import { Instagram } from './Instagram.js'
 
 class App extends Component {
   render() {
@@ -12,6 +14,8 @@ class App extends Component {
         <AboutMe text={ aboutMe } />
         <SkillHighlights skill={ skills } />
         <Projects projects={ projects }/>
+        <Blog />
+        <Instagram />
       </div>
     );
   }
@@ -62,7 +66,7 @@ const projects = {
   },
   'B' : {
     'name' : 'DigiExpress',
-    'imgUrl' : '/assets/projects/digiexpress2.jpg',
+    'imgUrl' : '/assets/projects/digiexpress3.jpg',
     'desc' : 'bdesc'
   },
   'C' : {

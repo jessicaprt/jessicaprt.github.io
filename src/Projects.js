@@ -8,10 +8,10 @@ import { ProjectItem } from './ProjectItem.js'
 export class Projects extends Component {
     render() {
         return (
-            <div className="projects" id="projects">
+            <div className="projects champagneBackground" id="projects">
                 <Grid>
                     <div className="projectsContent">
-                        <h1 className="Sofia-title center" >- Projects -</h1>
+                        <h1 className="Oswald-font purpleFont center" >Projects</h1>
                         <Row>
                             <Col sm={4}><ProjectItem 
                                 imgUrl={ this.props.projects.A.imgUrl }
@@ -26,7 +26,7 @@ export class Projects extends Component {
                                 title={ this.props.projects.C.name } /></Col>
                         </Row>
                         
-                        <Button className="projectButton">- View more projects -</Button>
+                        <Button className="projectButton Oswald-font">- View more projects -</Button>
                     </div>              
                 </Grid>
             </div>
