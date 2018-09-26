@@ -24,7 +24,7 @@ export class BlogItem extends Component {
             <Grid className="BlogItem">
                 <Row>
                     <Col sm={4}>
-                        <div class="fBlogImageWrapper">
+                        <div className="fBlogImageWrapper">
                         <img 
                             src={ "./blogs/images/" + this.props.image }
                             alt={ this.props.title } 
@@ -33,7 +33,7 @@ export class BlogItem extends Component {
                         <p className="fBlogTitle Oswald-font">{ this.props.title }</p>
                         <p className="fBlogContent">
                             { this.trimContent(this.props.content) }
-                            <a href={ this.props.blogUrl }> ... Read more</a></p></Col>
+                            <a href={ this.props.blogUrl } className="purpleFont"> ... Read more</a></p></Col>
                 </Row>
             </Grid>
         );

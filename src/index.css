@@ -121,6 +121,40 @@ body {
 { padding: 5vh; 
   text-align: center; }
 
+.projectsContainer
+{ position: static; }
+
+.projectsTitleContainer
+{ position: static; }
+
+.projectsTitleInnerContainer
+{ position: relative;
+  width: 100% }
+
+.projectsLine
+{ height: 2px;
+  background-color: #000;
+  width: 100%; 
+  position: absolute }
+
+.projectsTitle 
+{ font-size: 6vh;
+  padding: 2vh 5vh; 
+  background-color: rgb(126, 106, 140);
+  margin: 0 -20px -20px 0;
+  position: relative; }
+
+.projectsTitleWrapper
+{ border: 2px solid rgba(126, 106, 140, 0.9);
+  margin: 5vh auto; 
+  padding: 10px; }
+
+.projectsLine
+{ height: 30px;
+  width: 100%;
+  margin-top: 10vh; 
+  background-color: rgba(126, 106, 140, 0.4) }
+
 .projectImages
 { width: 100%; 
   margin: 5px -30px -40px 0; }
@@ -129,13 +163,23 @@ body {
 { padding: 10px 0; 
   border: 3px solid rgba(126, 106, 140, 0.5); }
 
-.projectTitle
+.projectItemTitle
 { margin-top: 40px; 
   color: #7e6a8c;
   text-align: center; }
 
 .projectItem
 { margin-top: 2vh; }
+
+.projectsLineStatic
+{ position: static;
+  margin-top: 0}
+
+.projectsFooter
+{ text-align: center !important; 
+  color: #000;
+  font-size: 30px;
+  position: static;}
 
 .projectButton
 { border: 2px solid rgba(126, 106, 140, 0.5);
@@ -168,6 +212,10 @@ body {
 
 .fBlogTitle
 { font-size: 25px; }
+
+.fBlogContent a:hover
+{ text-decoration: none;
+  color: rgba(255,255,255,0.7) }
 
 .instagram
 { margin: 0 auto; 

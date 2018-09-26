@@ -9,7 +9,7 @@ export class ProjectItem extends Component {
                         src={ this.props.imgUrl } 
                         alt={ this.props.title }
                         className="projectImages" /></div>
-                <h5 className="projectTitle Oswald-font">{ this.props.title }</h5>
+                <h5 className="projectItemTitle Oswald-font">{ this.props.title }</h5>
             </div>
         );
     }

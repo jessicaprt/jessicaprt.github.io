@@ -23,9 +23,8 @@ export class Projects extends Component {
 
     renderProjects() {
         if (this.state.projects.length !== 0) {
-            console.log(this.state.projects)
             return(
-                <Row>
+                <Row className="projectsContainer">
                     <Col sm={4}><ProjectItem 
                         imgUrl={ this.state.projects.A.imgUrl }
                         title={ this.state.projects.A.name } /></Col>
@@ -45,11 +44,19 @@ export class Projects extends Component {
             <div className="projects champagneBackground" id="projects">
                 <Grid>
                     <div className="projectsContent">
-                        <h1 className="Oswald-font purpleFont center" >Projects</h1>
+                        <Row className="projectsTitleContainer">
+                            <div className="projectsTitleInnerContainer">                            
+                                <div className="projectsLine"></div>
+                                <Col sm={4} className="projectsTitleWrapper">
+                                    <div className="projectsTitle Oswald-font">Projects</div></Col></div>
+                        </Row>
                         
                         { this.renderProjects() }
                         
-                        <Button className="projectButton Oswald-font">- View more projects -</Button>
+                            <Button className="projectButton Oswald-font">- View more projects -</Button>
+                        <Row className="projectsFooter">
+                            <div className="projectsLine projectsLineStatic"></div>
+                        </Row>
                     </div>              
                 </Grid>
             </div>
