@@ -16,26 +16,6 @@ export class Instagram extends Component {
             });
     }
 
-    renderInstagramPosts(posts) {
-        if (posts.length !== 0) {
-            console.log(posts);
-            var instaPosts = [];
-            for (var i=0; i<6; i++) {
-                instaPosts[i] = {
-                    'image' : posts[i].images.standard_resolution.url
-                }
-            }
-    
-            return (
-                <div>
-                    <p>{instaPosts[0]}</p>
-                    <img src={instaPosts[0]} />
-                </div> );
-            
-            return(<div></div>);
-        }
-    }
-
     render() {
         return (
         <div className="instagram" id="instagram">
@@ -44,14 +24,18 @@ export class Instagram extends Component {
             <div className="instagramWrapper">
                 <ul>
                     { this.state.instagram.slice(0,3).map(post => 
-                        <li className="instagramPosts">
-                        <img src={post.images.standard_resolution.url} alt="instagram post"/> </li>)}
+                        <li className="instagramPosts" key={post.created_time} >
+                        <img 
+                            src={post.images.standard_resolution.url} 
+                            alt={post.created_time}/> </li>)}
                 </ul>
 
                 <ul>
                     { this.state.instagram.slice(3,6).map(post => 
-                        <li className="instagramPosts">
-                        <img src={post.images.standard_resolution.url} /> </li>)}
+                        <li className="instagramPosts" key={post.created_time} >
+                        <img 
+                            src={post.images.standard_resolution.url}
+                            alt={post.created_time} /> </li>)}
                 </ul>
             </div>
         </div>

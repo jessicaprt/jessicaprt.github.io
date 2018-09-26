@@ -9,7 +9,7 @@ export class NavBar extends React.Component {
       ['Instagram', 'instagram'] ];
     const navLinks = pages.map(page => {
       return (
-        <div>
+        <div key={page[1]}>
           <a href={'#' + page[1]} className="navItems">
             {page[0]}
           </a>
