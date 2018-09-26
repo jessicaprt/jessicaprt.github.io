@@ -3,7 +3,7 @@ import Grid from 'react-bootstrap/lib/Grid';
 import Row from 'react-bootstrap/lib/Row';
 import Col from 'react-bootstrap/lib/Col';
 
-export class BlogItem extends Component {
+export class FeaturedBlogItem extends Component {
     
     trimContent(content) {
         var str = content.toString();

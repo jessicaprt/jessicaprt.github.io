@@ -19,7 +19,7 @@ export class Instagram extends Component {
     render() {
         return (
         <div className="instagram" id="instagram">
-            <h1 className="Oswald-font instagramTitle">Instagram</h1>
+            <h1 className="Oswald-font instagramTitle purpleFont">Instagram</h1>
             
             <div className="instagramWrapper">
                 <ul>

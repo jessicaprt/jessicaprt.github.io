@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import Grid from 'react-bootstrap/lib/Grid';
-import { BlogItem } from './BlogItem.js';
+import { FeaturedBlogItem } from './FeaturedBlogItem.js';
 
 export class FeaturedBlog extends Component {
     constructor(props) {
@@ -48,17 +48,17 @@ export class FeaturedBlog extends Component {
 
             return (
                 <div>
-                    <BlogItem 
+                    <FeaturedBlogItem 
                         title = { blogItems[0].title }
                         content = { blogItems[0].content }
                         blogUrl = { blogItems[0].blogUrl }
                         image = { blogItems[0].image } />
-                    <BlogItem 
+                    <FeaturedBlogItem 
                         title = { blogItems[1].title }
                         content = { blogItems[1].content }
                         blogUrl = { blogItems[1].blogUrl }
                         image = { blogItems[1].image } />
-                    <BlogItem 
+                    <FeaturedBlogItem 
                         title = { blogItems[2].title }
                         content = { blogItems[2].content }
                         blogUrl = { blogItems[2].blogUrl }

@@ -6,7 +6,8 @@ export class NavBar extends React.Component {
       ['About me', 'about-me'], 
       ['Projects', 'projects'], 
       ['Blog', 'blog'],
-      ['Instagram', 'instagram'] ];
+      ['Instagram', 'instagram'],
+      ['Contact Info', 'contact'] ];
     const navLinks = pages.map(page => {
       return (
         <div key={page[1]}>
