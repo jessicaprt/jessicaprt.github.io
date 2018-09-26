@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import Grid from 'react-bootstrap/lib/Grid';
-import Row from 'react-bootstrap/lib/Row';
-import Col from 'react-bootstrap/lib/Col';
 
 export class ContactInfo extends Component {
     renderDate() {
@@ -11,18 +9,26 @@ export class ContactInfo extends Component {
 
     render() {
         return (
-            <div class="ContactInfo" id="contact">
+            <div className="ContactInfo" id="contact">
                 <Grid>
                     <ul>
                         <li className="contactIcons">
-                            <a href="https://www.linkedin.com/in/jessica-prieto-316918a6/" target="_blank"><img src="./assets/icons/In-White-28px-R.png" className="contactIconsImg"/></a></li>
+                            <a href="https://www.linkedin.com/in/jessica-prieto-316918a6/" 
+                            target="_blank"
+                            rel="noopener noreferrer"><img src="./assets/icons/In-White-28px-R.png" className="contactIconsImg"/></a></li>
+                        
                         <li className="contactIcons">
-                            <a href="https://github.com/jessicaprt" target="_blank"><img src="./assets/icons/github-6-xxl.png" className="contactIconsImg"/></a></li>
+                            <a href="https://github.com/jessicaprt" 
+                            target="_blank"
+                            rel="noopener noreferrer"><img src="./assets/icons/github-6-xxl.png" className="contactIconsImg"/></a></li>
+                        
                         <li className="contactIcons">
-                            <a href="mailto:jessica@prieto.ca" target="_blank"><img src="./assets/icons/ic_mail_outline.png" className="contactIconsImg"/></a></li></ul>
+                            <a href="mailto:jessica@prieto.ca" 
+                            target="_blank"
+                            rel="noopener noreferrer"><img src="./assets/icons/ic_mail_outline.png" className="contactIconsImg"/></a></li></ul>
                     <p><strong>email: </strong>jessica@prieto.ca</p>
                     <div className="whiteDivider"></div>
-                    <p>{ this.renderDate() }</p>
+                    { this.renderDate() }
                 </Grid>
             </div>
         );

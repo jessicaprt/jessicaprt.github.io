@@ -26,7 +26,8 @@ export class BlogItem extends Component {
                     <Col sm={4}>
                         <div class="fBlogImageWrapper">
                         <img 
-                            src={ "./blogs/images/" + this.props.image } 
+                            src={ "./blogs/images/" + this.props.image }
+                            alt={ this.props.title } 
                             className="fBlogImages"/></div></Col>
                     <Col sm={8} className="fBlogContainer">
                         <p className="fBlogTitle Oswald-font">{ this.props.title }</p>

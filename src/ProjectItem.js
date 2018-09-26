@@ -4,8 +4,11 @@ export class ProjectItem extends Component {
     render() {
         return(
             <div className="projectItem">
-                <div class="imageWrapper">
-                    <img src={ this.props.imgUrl } className="projectImages" /></div>
+                <div className="imageWrapper">
+                    <img 
+                        src={ this.props.imgUrl } 
+                        alt={ this.props.title }
+                        className="projectImages" /></div>
                 <h5 className="projectTitle Oswald-font">{ this.props.title }</h5>
             </div>
         );

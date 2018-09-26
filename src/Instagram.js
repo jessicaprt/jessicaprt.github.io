@@ -17,7 +17,7 @@ export class Instagram extends Component {
     }
 
     renderInstagramPosts(posts) {
-        if (posts.length != 0) {
+        if (posts.length !== 0) {
             console.log(posts);
             var instaPosts = [];
             for (var i=0; i<6; i++) {
@@ -41,11 +41,11 @@ export class Instagram extends Component {
         <div className="instagram" id="instagram">
             <h1 className="Oswald-font instagramTitle">Instagram</h1>
             
-            <div class="instagramWrapper">
+            <div className="instagramWrapper">
                 <ul>
                     { this.state.instagram.slice(0,3).map(post => 
                         <li className="instagramPosts">
-                        <img src={post.images.standard_resolution.url} /> </li>)}
+                        <img src={post.images.standard_resolution.url} alt="instagram post"/> </li>)}
                 </ul>
 
                 <ul>

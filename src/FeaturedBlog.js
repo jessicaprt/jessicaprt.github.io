@@ -20,7 +20,7 @@ export class FeaturedBlog extends Component {
     }
 
     renderBlog(blogs) {
-        if (blogs.length != 0) {
+        if (blogs.length !== 0) {
             var blogItems = [];
             var i=0;
             var size = blogs.length;
