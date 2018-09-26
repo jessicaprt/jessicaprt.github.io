@@ -199,4 +199,28 @@ body {
   min-height: 18vw;
   width: 18vw; }
 
+.ContactInfo
+{ height: 50vh;
+  padding: 5vh 0;
+  background-color: rgba(48, 44, 58, 0.8); 
+  color:rgba(255,255,255,0.8); 
+  font-size: 18px; 
+  font-family: 'Oswald' }
+
+.ContactInfo ul
+{ padding: 2vh 0}
+
+.whiteDivider
+{ height: 2px;
+  background-color: rgba(255,255,255,0.7);
+  width: 100%;
+  margin: 3vh 0; }
+
+.contactIcons
+{ display: inline-block; ;}
+
+.contactIconsImg
+{ width: 26px; 
+  margin-right: 1vw; 
+  margin-left: 0}
 

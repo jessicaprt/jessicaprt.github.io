@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import Grid from 'react-bootstrap/lib/Grid';
-import Row from 'react-bootstrap/lib/Row';
-import Col from 'react-bootstrap/lib/Col';
 
 export class Instagram extends Component {
     constructor(props) {
@@ -41,7 +38,7 @@ export class Instagram extends Component {
 
     render() {
         return (
-        <div className="instagram">
+        <div className="instagram" id="instagram">
             <h1 className="Oswald-font instagramTitle">Instagram</h1>
             
             <div class="instagramWrapper">

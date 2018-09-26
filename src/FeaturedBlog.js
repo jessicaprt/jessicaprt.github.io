@@ -3,7 +3,7 @@ import axios from 'axios';
 import Grid from 'react-bootstrap/lib/Grid';
 import { BlogItem } from './BlogItem.js';
 
-export class Blog extends Component {
+export class FeaturedBlog extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -72,7 +72,7 @@ export class Blog extends Component {
     render() {
 
         return(
-            <div className = "Blog">
+            <div className = "Blog" id="blog">
                 <Grid> <h1 className="Oswald-font blogTitle purpleFont">Blog</h1>
                     { this.renderBlog(this.state.blogs) }</Grid></div>
         );
