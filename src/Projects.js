@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import Grid from 'react-bootstrap/lib/Grid';
 import Row from 'react-bootstrap/lib/Row';
-import Button from 'react-bootstrap/lib/Button'
+import Button from 'react-bootstrap/lib/Button';
 import Col from 'react-bootstrap/lib/Col';
-import { ProjectItem } from './ProjectItem.js'
+import { ProjectItem } from './ProjectItem.js';
 import axios from 'axios';
 
 export class Projects extends Component {

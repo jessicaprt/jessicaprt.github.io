@@ -1,23 +1,39 @@
 import React from 'react';
+import Nav from 'react-bootstrap/lib/Nav';
+import Navbar from 'react-bootstrap/lib/Navbar';
+import NavItem from 'react-bootstrap/lib/NavItem';
 
 export class NavBar extends React.Component {
   render() {
-    const pages = [
-      ['About me', 'about-me'], 
-      ['Projects', 'projects'], 
-      ['Blog', 'blog'],
-      ['Instagram', 'instagram'],
-      ['Contact Info', 'contact'] ];
-    const navLinks = pages.map(page => {
-      return (
-        <div key={page[1]}>
-          <a href={'#' + page[1]} className="navItems">
-            {page[0]}
-          </a>
-        </div>
-      )
-    });
-
-    return <nav className="navBlock nav">{navLinks}</nav>;
-  }
+    return (
+    <div className="Navigation">
+      <div className="navLine"></div>
+      <Navbar inverse collapseOnSelect
+        className="mainNav">
+        <Navbar.Header>
+          <Navbar.Toggle />
+          <Navbar.Brand>
+            <a href="/">Jessica Prieto</a>
+          </Navbar.Brand>
+        </Navbar.Header>
+        <Navbar.Collapse>
+          <Nav>
+            <NavItem eventKey={1} href="/#about-me" className="navItem">
+              About Me</NavItem>
+            <NavItem eventKey={2} href="/#projects" className="navItem">
+              Projects</NavItem>
+            <NavItem eventKey={3} href="/#blog" className="navItem">
+              Blog</NavItem>
+            <NavItem eventKey={4} href="/#instagram" className="navItem">
+              Instagram
+            </NavItem>
+            <NavItem eventKey={5} href="/#contact" className="navItem">
+              Contact Info
+            </NavItem>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
+      <div className="navLine"></div>
+  </div>);
+    }
 }

@@ -4,12 +4,12 @@ import Grid from 'react-bootstrap/lib/Grid';
 export class ContactInfo extends Component {
     renderDate() {
         var d = new Date();
-        return (<p>&copy; Jessica Prieto - { d.getFullYear() }</p>);
+        return (<div className="contactContent">&copy; Jessica Prieto - { d.getFullYear() }</div>);
     }
 
     render() {
         return (
-            <div className="ContactInfo" id="contact">
+            <div className="footer" id="contact">
                 <Grid>
                     <ul>
                         <li className="contactIcons">

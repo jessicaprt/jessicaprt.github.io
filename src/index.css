@@ -1,8 +1,7 @@
-body {
-  margin: 0;
+body 
+{ margin: 0;
   padding: 0;
-  font-family: 'Cardo', serif;
-}
+  font-family: 'Cardo', serif; }
 
 .center
 { text-align: center; }
@@ -22,12 +21,6 @@ body {
 .purpleFont
 { color: #7e6a8c }
 
-.navItems 
-{ margin: 20px; 
-  font-size: 20px;
-  text-decoration: none; 
-  color: #888; }
-
 .navTitle
 { margin: 30px 50px; 
   font-size: 20px; 
@@ -36,8 +29,39 @@ body {
 .navBlock
 { display: inline-flex; }
 
-.nav
-{ padding: 20px }
+.navbar-header a
+{ font-size: 20px;
+  text-decoration: none; 
+  color: #9888ae !important; 
+  font-weight: bold; }
+
+.navbar-header a:hover
+{ margin: 0px; 
+  font-size: 20px;
+  text-decoration: none; 
+  color: rgba(152, 136, 174, 0.61) !important; }
+
+.Navigation
+{ margin-bottom: 5vh; }
+
+.mainNav
+{ background-color: rgba(0,0,0,0);
+  border: 0px;
+  padding-top: 5vh; }
+
+.navbar-toggle
+{ float: none;
+  margin-right: 0; 
+  border: 0;
+  border-radius: 4px; 
+  background-color: rgba(0,0,0,0.2) !important }
+
+.navbar-inverse .navbar-nav>li>a
+{ color: #888; 
+  font-size: 18px; }
+
+.navbar-inverse .navbar-nav>li>a:hover
+{ color: rgba(152, 136, 174, 0.5); }
 
 .header
 { height: 70vh;
@@ -45,6 +69,27 @@ body {
   background-image: url('./assets/banner.jpg'); 
   background-size: cover; 
   background-position: bottom }
+
+.plainHeader
+{ background-color: rgba(0,0,0,0);
+  padding: 0;
+  color: #fff }
+
+.plainHeader .mainNav
+{ margin: 0; 
+  padding: 2vh;
+  background-color: rgba(126, 106, 140, 0.7);;
+  border-radius: 0; }
+
+.plainHeader .navbar-header a
+{ color: #ddd !important; }
+
+.plainHeader .navbar-inverse .navbar-nav>li>a
+{ color: #eee; 
+  font-size: 18px; }
+
+.plainHeader p
+{ color: #fff; }
 
 .AboutMe
 { background-image: url('./assets/right_geometric.png');
@@ -214,8 +259,14 @@ body {
 { padding: 10px 0;
   border: 2.5px solid #fff}
 
-.fBlogTitle
-{ font-size: 25px; }
+.fBlogTitle a
+{ font-size: 25px; 
+  color: #000; }
+
+.fBlogTitle a:hover
+{ font-size: 25px; 
+  color: rgba(0,0,0,0.6); 
+  text-decoration: none; }
 
 .fBlogContent a:hover
 { text-decoration: none;
@@ -251,15 +302,18 @@ body {
   min-height: 18vw;
   width: 18vw; }
 
-.ContactInfo
-{ height: 50vh;
-  padding: 5vh 0;
+.footer
+{ padding: 5vh 0;
   background-color: rgba(48, 44, 58, 0.8); 
   color:rgba(255,255,255,0.8); 
   font-size: 18px; 
   font-family: 'Oswald' }
 
-.ContactInfo ul
+.mainFooter
+{ padding-left: 5vh;
+  margin-top: 15vh; }
+
+.footer ul
 { padding: 2vh 0}
 
 .whiteDivider
@@ -274,5 +328,60 @@ body {
 .contactIconsImg
 { width: 26px; 
   margin-right: 1vw; 
-  margin-left: 0}
+  margin-left: 0 }
 
+/** BLOG PAGES **/
+.blogPage
+{ font-size: 17px; }
+
+.blogContentPar
+{ text-indent: 30px; }
+
+.blogContentDate
+{ font-size: 20px;
+  text-align: center; 
+  margin-bottom: 5vh; }
+
+.blogPageHeader
+{ padding-bottom: 5vh; }
+.blogPageImage img
+{ width: 60vw; 
+  min-height: 40vw; }
+
+.blogPageImage
+{ width: 60vw;
+  height: 40vw;
+  overflow: hidden;
+  margin: 0 auto; }
+
+.blogPageImageWrapper
+{ border: 3px solid rgba(126, 106, 140, 0.7);
+  padding: 20px; 
+  width: 60vw;
+  height: 40vw; 
+  margin: 0 auto; }
+
+.blogPageTitle
+{ text-align: center; 
+  border-top: 2px solid rgba(126, 106, 140, 0.7);
+  border-bottom: 2px solid rgba(126, 106, 140, 0.7); 
+  width: 40vw; 
+  margin: 2vh auto; 
+  padding: 2vh 2vh; 
+  color: rgba(126, 106, 140, 0.9) }
+
+
+
+/** end BLOG PAGES **/
+
+@media (max-width: 768px) {
+  .navbar-header
+  { background-color: rgba(126, 106, 140, 0.7); }
+
+  .navbar-header a
+  { color: #fff !important; }
+
+  .navbar-collapse 
+  { border: 0;
+    background-color: rgba(255,255,255,0.7) }
+}

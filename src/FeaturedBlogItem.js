@@ -30,10 +30,12 @@ export class FeaturedBlogItem extends Component {
                             alt={ this.props.title } 
                             className="fBlogImages"/></div></Col>
                     <Col sm={8} className="fBlogContainer">
-                        <p className="fBlogTitle Oswald-font">{ this.props.title }</p>
+                        <p className="fBlogTitle Oswald-font">
+                            <a href={ "blogs/" + this.props.blogUrl }>
+                            { this.props.title }</a></p>
                         <p className="fBlogContent">
                             { this.trimContent(this.props.content) }
-                            <a href={ this.props.blogUrl } className="purpleFont"> ... Read more</a></p></Col>
+                            <a href={ "blogs/" + this.props.blogUrl } className="purpleFont"> ... Read more</a></p></Col>
                 </Row>
             </Grid>
         );
