@@ -3,7 +3,7 @@ import Grid from 'react-bootstrap/lib/Grid';
 import Row from 'react-bootstrap/lib/Row';
 import Col from 'react-bootstrap/lib/Col';
 
-export class FeaturedBlogItem extends Component {
+export class BlogItem extends Component {
     
     trimContent(content) {
         var str = content.toString();
@@ -26,16 +26,16 @@ export class FeaturedBlogItem extends Component {
                     <Col sm={4}>
                         <div className="fBlogImageWrapper">
                         <img 
-                            src={ "./blogs/images/" + this.props.image }
+                            src={ this.props.route + "/images/" + this.props.image }
                             alt={ this.props.title } 
                             className="fBlogImages"/></div></Col>
                     <Col sm={8} className="fBlogContainer">
                         <p className="fBlogTitle Oswald-font">
-                            <a href={ "blogs/" + this.props.blogUrl }>
+                            <a href={ "blogs/" + this.props.blogUrl } >
                             { this.props.title }</a></p>
                         <p className="fBlogContent">
                             { this.trimContent(this.props.content) }
-                            <a href={ "blogs/" + this.props.blogUrl } className="purpleFont"> ... Read more</a></p></Col>
+                            <a href={ this.props.route + this.props.blogUrl } className="purpleFont"> ... Read more</a></p></Col>
                 </Row>
             </Grid>
         );

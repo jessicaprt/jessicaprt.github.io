@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 
-import { LandingPage } from './LandingPage.js';
-import { BlogPage } from './BlogPage.js';
+import { LandingPage } from './LandingPage';
+import { BlogPage } from './BlogPage';
+import { AllBlogs } from './AllBlogs';
+
 import { BrowserRouter, Route } from 'react-router-dom';
 
 import axios from 'axios';
@@ -31,9 +33,10 @@ class App extends Component {
             <LandingPage />
           </div>
         )}/>
-        <Route exact={true} path='/blog' render={() => (
+
+        <Route exact={true} path='/blogs/all_blogs' render={() => (
           <div className="App">
-            <BlogPage />
+            <AllBlogs />
           </div>
         )}/>
 

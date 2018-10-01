@@ -6,7 +6,7 @@ import Col from 'react-bootstrap/lib/Col';
 import { ProjectItem } from './ProjectItem.js';
 import axios from 'axios';
 
-export class Projects extends Component {
+export class FeaturedProjects extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -53,7 +53,9 @@ export class Projects extends Component {
                         
                         { this.renderProjects() }
                         
-                            <Button className="projectButton Oswald-font">- View more projects -</Button>
+                        <a href="/projects" className="aButton">
+                            <div className="mainButton Oswald-font">- View all Projects -</div></a>
+
                         <Row className="projectsFooter">
                             <div className="projectsLine projectsLineStatic"></div>
                         </Row>

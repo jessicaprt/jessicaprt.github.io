@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import Grid from 'react-bootstrap/lib/Grid';
-import { FeaturedBlogItem } from './FeaturedBlogItem.js';
+import Col from 'react-bootstrap/lib/Col';
+import Button from 'react-bootstrap/lib/Button';
+
+import { BlogItem } from './BlogItem.js';
 
 export class FeaturedBlog extends Component {
     constructor(props) {
@@ -48,33 +51,40 @@ export class FeaturedBlog extends Component {
 
             return (
                 <div>
-                    <FeaturedBlogItem 
+                    { (blogItems[0].title !== "") ? <BlogItem 
                         title = { blogItems[0].title }
                         content = { blogItems[0].content }
                         blogUrl = { blogItems[0].blogUrl }
-                        image = { blogItems[0].image } />
-                    <FeaturedBlogItem 
+                        image = { blogItems[0].image }
+                        route = "./blogs/" /> : null }
+                    { (blogItems[1].title !== "") ? <BlogItem 
                         title = { blogItems[1].title }
                         content = { blogItems[1].content }
                         blogUrl = { blogItems[1].blogUrl }
-                        image = { blogItems[1].image } />
-                    <FeaturedBlogItem 
+                        image = { blogItems[1].image } 
+                        route = "./blogs/"/> : null }
+                    { (blogItems[2].title !== "") ? <BlogItem 
                         title = { blogItems[2].title }
                         content = { blogItems[2].content }
                         blogUrl = { blogItems[2].blogUrl }
-                        image = { blogItems[2].image } />
+                        image = { blogItems[2].image } 
+                        route = "./blogs/"/> : null }
                 </div>
             );
         }
-        
     }
 
     render() {
 
         return(
-            <div className = "Blog" id="blog">
+            <div className="Blog" id="blog">
                 <Grid> <h1 className="Oswald-font blogTitle purpleFont">Blog</h1>
-                    { this.renderBlog(this.state.blogs) }</Grid></div>
+                    { this.renderBlog(this.state.blogs) }
+
+                <a href="/blogs/all_blogs" className="aButton">
+                    <div className="mainButton Oswald-font">- View all Blogs -</div></a>
+                
+                </Grid></div>
         );
     }
 }
