@@ -1,0 +1,54 @@
+{ "contents" : {
+    "aboutMe" : "Hello! i'm Jessica Prieto. I graduated from University of Alberta with a degree in Computer Engineering. I am passionate at creating mobile applications, currently Android applications, and I'm absolutetly dedicated to discover more and more techniques and to keep updated with the technologies. I also have a knack for web applications building back-end services for websites and coming up with the UI/UX design ideas.",
+    "skills_highlight" : {
+        "A" : {
+          "name" : "Web Dev",
+          "imgUrl" : "./assets/icons/ic_desktop.png",
+          "description" : "I enjoy designing and developing web UI/UX. Aside from front-end, I also like exploring back-end dev and create more functionality to a site.",
+          "skills" : [
+            ["HTML", "90%"],
+            ["CSS", "90%"],
+            ["React", "50%"],
+            ["Bootstrap", "70%"],
+            ["jQuery", "60%"],
+            ["ASP.NET", "40%"]]
+        },
+        "B" : {
+          "name" : "Mobile Dev",
+          "imgUrl" : "./assets/icons/ic_phone_android.png",
+          "description" : "I also enjoy developing the design and full functionality of mobile apps particularly for android.",
+          "skills" : [
+            ["android", "80%"]
+          ]
+        },
+        "C" : {
+          "name" : "Hobbies",
+          "imgUrl" : "./assets/icons/ic_lightbulb.png",
+          "description" : "Being active is something I really enjoy doing. Easy to say, I love being outdoors!",
+          "skills" : [
+            ["hiking & camping", "90%"],
+            ["playing music", "85%"],
+            ["photography", "70%"],
+            ["traveling", "75%"]
+          ]
+        }
+    },
+    "projects" : {
+        "A" : {
+          "name" : "Hotspot",
+          "imgUrl" : "/assets/projects/hotspot2.jpg",
+          "desc" : "This is hotspot"
+        },
+        "B" : {
+          "name" : "DigiExpress",
+          "imgUrl" : "/assets/projects/digiexpress3.jpg",
+          "desc" : "bdesc"
+        },
+        "C" : {
+          "name" : "Blog Generator",
+          "imgUrl" : "./assets/projects/blog-generator.jpg",
+          "desc" : "cdesc"
+        }
+      }
+    }
+}
