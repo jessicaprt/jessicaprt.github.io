@@ -18,6 +18,9 @@ class App extends Component {
   }
 
   componentDidMount() {
+    var sites = ['http://localhost:3000/', 'https://jessicaprt.github.io/personal-website-react/', 'https://test.jessica.prieto.ca/'];
+    
+    if ( !sites.includes(window.location.href) ) {
       axios.get('./blogs.json')
           .then ((response) => {
               const blogs = response.data.blogs;
@@ -29,6 +32,8 @@ class App extends Component {
               console.log("blogs.json shouldn't load here");
             }
           } );
+    }
+    
   }
   
   render() {
