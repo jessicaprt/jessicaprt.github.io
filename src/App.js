@@ -40,26 +40,38 @@ class App extends Component {
     return (
       <BrowserRouter>
       <div>
-        <Route exact={true} path='/' render={() => (
-          <div className="App">
-            <LandingPage />
-          </div>
+        <Route exact={true} 
+          path='/' 
+          baseName='/'
+          render={() => (
+            <div className="App">
+              <LandingPage />
+            </div>
         )}/>
 
-        <Route exact={true} path='/blogs/all_blogs' render={() => (
-          <div className="App">
-            <AllBlogs />
-          </div>
+        <Route exact={true} 
+          path='/blogs/all_blogs'
+          baseName='/blogs/all_blogs'
+          render={() => (
+            <div className="App">
+              <AllBlogs />
+            </div>
         )}/>
 
-        <Route exact={true} path='/projects' render={() => (
-          <div className="App">
-            <Projects />
-          </div>
+        <Route exact={true} 
+          path='/projects' 
+          baseName='/projects'
+          render={() => (
+            <div className="App">
+              <Projects />
+            </div>
         )}/>
 
         { this.state.blogs.map((blog) => 
-          <Route exact={true} path={'/blogs/' + blog.url} render={() => (
+          <Route exact={true} 
+          path={'/blogs/' + blog.url} 
+          baseName={'/blogs/' + blog.url}
+          render={() => (
             <div className="App">
               <BlogPage blog={ blog }/>
             </div> )}/>
