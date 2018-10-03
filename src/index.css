@@ -78,7 +78,7 @@ body
 .plainHeader .mainNav
 { margin: 0; 
   padding: 2vh;
-  background-color: rgba(126, 106, 140, 0.7);;
+  background-color: rgba(126, 106, 140, 0.7);
   border-radius: 0; }
 
 .plainHeader .navbar-header a
@@ -129,6 +129,24 @@ body
 { margin-top: -6vh;
   padding: 0 3vh; }
 
+.skillItem
+{ text-align: left; }
+
+.skillItemRate
+{ width: 7vw; }
+
+.skillComponent
+{ padding: 3px 8px; }
+
+.skillList
+{ list-style: none; 
+  margin-top: 2vh; }
+
+.skillItem:before 
+{ content:"\2714\0020"; 
+  color: #7e6a8c; 
+  margin-right: 8px; }
+
 .skillContent
 { background-color: #ddd;
   color: #555; 
@@ -174,7 +192,8 @@ body
 
 .projectsTitleInnerContainer
 { position: relative;
-  width: 100% }
+  width: 100%; 
+  height: 25vh; }
 
 .projectsLine
 { height: 2px;
@@ -186,13 +205,17 @@ body
 { font-size: 6vh;
   padding: 2vh 5vh; 
   background-color: rgb(126, 106, 140);
-  margin: 0 -20px -20px 0;
-  position: relative; }
+  margin: 0 -20px -20px 0; }
 
 .projectsTitleWrapper
 { border: 2px solid rgba(126, 106, 140, 0.9);
   margin: 5vh auto; 
-  padding: 10px; }
+  padding: 10px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto; 
+  left: 0;
+  right: 0}
 
 .projectsLine
 { height: 30px;
@@ -211,7 +234,8 @@ body
 .projectItemTitle
 { margin-top: 40px; 
   color: #7e6a8c;
-  text-align: center; }
+  text-align: center;
+  font-size: 18px; }
 
 .projectItem
 { margin-top: 2vh; }
@@ -224,7 +248,8 @@ body
 { text-align: center !important; 
   color: #000;
   font-size: 30px;
-  position: static;}
+  position: static;
+  margin-top: 5vh; }
 
 .projectButton
 { border: 2px solid rgba(126, 106, 140, 0.5);
@@ -405,6 +430,25 @@ body
 
 
 /** end BLOG PAGES **/
+
+/** PROJECTS PAGE **/
+.projectsPageTitle
+{ text-align: center }
+
+.activeFilters
+{ margin: 2vh; }
+
+.filterInput 
+{ display: inline-block; }
+
+.activeFilters li
+{ display: inline-block; 
+  border: 1px solid black;
+  padding: 2px 5px; 
+  margin: 0 10px; }
+
+
+/** end PROJECTS PAGE **/
 
 @media (max-width: 768px) {
   .navbar-header

@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import { LandingPage } from './LandingPage';
 import { BlogPage } from './BlogPage';
 import { AllBlogs } from './AllBlogs';
+import { Projects } from './Projects';
 
 import { BrowserRouter, Route } from 'react-router-dom';
 
@@ -37,6 +38,12 @@ class App extends Component {
         <Route exact={true} path='/blogs/all_blogs' render={() => (
           <div className="App">
             <AllBlogs />
+          </div>
+        )}/>
+
+        <Route exact={true} path='/projects' render={() => (
+          <div className="App">
+            <Projects />
           </div>
         )}/>
 

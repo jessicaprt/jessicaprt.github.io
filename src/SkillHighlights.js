@@ -29,17 +29,20 @@ export class SkillHighlights extends Component {
                             <Skill 
                                 name={ this.state.skillsHighlight.A.name }
                                 imgUrl={ this.state.skillsHighlight.A.imgUrl }
-                                description={ this.state.skillsHighlight.A.description }/></div></Col>
+                                description={ this.state.skillsHighlight.A.description }
+                                skills = { this.state.skillsHighlight.A.skills }/></div></Col>
                     <Col sm={4} className="skill"><div className="skillBorder">
                             <Skill 
                                 name={ this.state.skillsHighlight.B.name }
                                 imgUrl={ this.state.skillsHighlight.B.imgUrl }
-                                description={ this.state.skillsHighlight.B.description }/></div></Col>
+                                description={ this.state.skillsHighlight.B.description }
+                                skills = { this.state.skillsHighlight.B.skills }/></div></Col>
                     <Col sm={4} className="skill"><div className="skillBorder">
                             <Skill 
                                 name={ this.state.skillsHighlight.C.name }
                                 imgUrl={ this.state.skillsHighlight.C.imgUrl }
-                                description={ this.state.skillsHighlight.C.description }/></div></Col>
+                                description={ this.state.skillsHighlight.C.description }
+                                skills = { this.state.skillsHighlight.C.skills }/></div></Col>
                 </Row>);
         }
     }

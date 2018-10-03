@@ -53,8 +53,8 @@ export class FeaturedProjects extends Component {
                         
                         { this.renderProjects() }
                         
-                        <a href="/projects" className="aButton">
-                            <div className="mainButton Oswald-font">- View all Projects -</div></a>
+                        {/* <a href="/projects" className="aButton">
+                            <div className="mainButton Oswald-font">- View all Projects -</div></a> */}
 
                         <Row className="projectsFooter">
                             <div className="projectsLine projectsLineStatic"></div>
