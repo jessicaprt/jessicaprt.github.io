@@ -45,7 +45,7 @@ export class Projects extends Component {
 
     renderActiveTags(active_tags) {
         return (
-            (active_tags.length != 0) ? 
+            (active_tags.length !== 0) ? 
                 <ul className="activeFilters filterInput">
                     { active_tags.map((tag) =>
                         <li>
@@ -82,7 +82,7 @@ export class Projects extends Component {
         <div className="ProjectsPage">
             <PlainHeader />
 
-            { (this.state.projects.length != 0) ?
+            { (this.state.projects.length !== 0) ?
             <Grid>
               <div>
                     <h1 className="projectsPageTitle Oswald-font purpleFont">Projects</h1>

@@ -19,10 +19,16 @@ class App extends Component {
 
   componentDidMount() {
       axios.get('./blogs.json')
-          .then (response => {
+          .then ((response) => {
               const blogs = response.data.blogs;
-              this.setState({ blogs })
-          });
+              this.setState({ blogs }) })
+
+          .catch((error) => {
+            // Error
+            if (error.response) {
+              console.log("blogs.json shouldn't load here");
+            }
+          } );
   }
   
   render() {

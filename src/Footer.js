@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Grid from 'react-bootstrap/lib/Grid';
 
 export class Footer extends Component {
     renderDate() {

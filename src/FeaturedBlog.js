@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import Grid from 'react-bootstrap/lib/Grid';
-import Col from 'react-bootstrap/lib/Col';
-import Button from 'react-bootstrap/lib/Button';
 
 import { BlogItem } from './BlogItem.js';
 
