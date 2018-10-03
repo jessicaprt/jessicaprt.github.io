@@ -42,7 +42,7 @@ class App extends Component {
       <div>
         <Route exact={true} 
           path='/' 
-          baseName='/'
+          baseName='/personal-website-react'
           render={() => (
             <div className="App">
               <LandingPage />
@@ -51,7 +51,7 @@ class App extends Component {
 
         <Route exact={true} 
           path='/blogs/all_blogs'
-          baseName='/blogs/all_blogs'
+          baseName='/personal-website-react/blogs/all_blogs'
           render={() => (
             <div className="App">
               <AllBlogs />
@@ -70,7 +70,7 @@ class App extends Component {
         { this.state.blogs.map((blog) => 
           <Route exact={true} 
           path={'/blogs/' + blog.url} 
-          baseName={'/blogs/' + blog.url}
+          baseName={'/personal-website-react/blogs' + blog.url}
           render={() => (
             <div className="App">
               <BlogPage blog={ blog }/>
