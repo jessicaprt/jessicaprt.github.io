@@ -7,6 +7,12 @@ import { FeaturedBlog }     from './FeaturedBlog.js';
 import { Instagram }        from './Instagram.js'
 import { ContactInfo }      from './ContactInfo.js'; 
 
+
+import { LandingPage } from './LandingPage';
+import { AllBlogs } from './AllBlogs';
+
+import { BrowserRouter, Route } from 'react-router-dom';
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -17,15 +23,25 @@ class App extends Component {
   
   render() {
     return (
-      <div className="App">
-        <Header />
-        <AboutMe />
-        <SkillHighlights />
-        <FeaturedProjects />
-        <FeaturedBlog />
-        <Instagram />
-        <ContactInfo />
-      </div>
+      <BrowserRouter baseName={process.env.PUBLIC_URL}>
+        <div>
+          <Route exact={true} 
+            path='/'
+            render={() => (
+              <div className="App">
+                <LandingPage />
+              </div>
+          )}/>
+
+          <Route exact={true} 
+            path='/blogs/all_blogs'
+            render={() => (
+              <div className="App">
+                <AllBlogs />
+              </div>
+          )}/>
+        </div>
+      </BrowserRouter>
     );
   }
 }
