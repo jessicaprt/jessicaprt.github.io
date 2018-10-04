@@ -45,56 +45,47 @@ class App extends Component {
   
   render() {
     return (
-      <div className="App">
-        <Header />
-        <AboutMe />
-        <SkillHighlights />
-        <FeaturedProjects />
-        <FeaturedBlog />
-        <Instagram />
-        <ContactInfo />
+      <BrowserRouter>
+      <div>
+        <Route exact={true} 
+          path='/' 
+          baseName='/personal-website-react'
+          render={() => (
+            <div className="App">
+              <LandingPage />
+            </div>
+        )}/>
+
+        <Route exact={true} 
+          path='/blogs/all_blogs'
+          baseName='/personal-website-react/blogs/all_blogs'
+          render={() => (
+            <div className="App">
+              <AllBlogs />
+            </div>
+        )}/>
+
+        <Route exact={true} 
+          path='/projects' 
+          baseName='/projects'
+          render={() => (
+            <div className="App">
+              <Projects />
+            </div>
+        )}/>
+
+        { this.state.blogs.map((blog) => 
+          <Route exact={true} 
+          path={'/blogs/' + blog.url} 
+          baseName={'/personal-website-react/blogs' + blog.url}
+          render={() => (
+            <div className="App">
+              <BlogPage blog={ blog }/>
+            </div> )}/>
+          ) }
+
       </div>
-    //   <BrowserRouter>
-    //   <div>
-    //     <Route exact={true} 
-    //       path='/' 
-    //       baseName='/personal-website-react'
-    //       render={() => (
-    //         <div className="App">
-    //           <LandingPage />
-    //         </div>
-    //     )}/>
-
-    //     <Route exact={true} 
-    //       path='/blogs/all_blogs'
-    //       baseName='/personal-website-react/blogs/all_blogs'
-    //       render={() => (
-    //         <div className="App">
-    //           <AllBlogs />
-    //         </div>
-    //     )}/>
-
-    //     <Route exact={true} 
-    //       path='/projects' 
-    //       baseName='/projects'
-    //       render={() => (
-    //         <div className="App">
-    //           <Projects />
-    //         </div>
-    //     )}/>
-
-    //     { this.state.blogs.map((blog) => 
-    //       <Route exact={true} 
-    //       path={'/blogs/' + blog.url} 
-    //       baseName={'/personal-website-react/blogs' + blog.url}
-    //       render={() => (
-    //         <div className="App">
-    //           <BlogPage blog={ blog }/>
-    //         </div> )}/>
-    //       ) }
-
-    //   </div>
-    // </BrowserRouter>
+    </BrowserRouter>
     );
   }
 }
