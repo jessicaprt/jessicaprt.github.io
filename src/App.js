@@ -1,12 +1,4 @@
 import React, { Component } from 'react';
-import { Header }           from './Header.js';
-import { AboutMe }          from './AboutMe.js';
-import { SkillHighlights }  from './SkillHighlights.js';
-import { FeaturedProjects } from './FeaturedProjects.js';
-import { FeaturedBlog }     from './FeaturedBlog.js';
-import { Instagram }        from './Instagram.js'
-import { ContactInfo }      from './ContactInfo.js'; 
-
 
 import { LandingPage } from './LandingPage';
 import { AllBlogs } from './AllBlogs';
@@ -21,6 +13,25 @@ class App extends Component {
     }
   }
   
+  componentDidMount() {
+    var sites = ['http://localhost:3000/', 'https://jessicaprt.github.io/personal-website-react/', 'https://test.jessica.prieto.ca/'];
+    
+    if ( !sites.includes(window.location.href) ) {
+      axios.get('./blogs.json')
+          .then ((response) => {
+              const blogs = response.data.blogs;
+              this.setState({ blogs }) })
+
+          .catch((error) => {
+            // Error
+            if (error.response) {
+              console.log("blogs.json shouldn't load here");
+            }
+          } );
+    }
+    
+  }
+
   render() {
     return (
       <BrowserRouter baseName={process.env.PUBLIC_URL}>
@@ -41,6 +52,17 @@ class App extends Component {
               </div>
           )}/>
         </div>
+
+        { this.state.blogs.map((blog) => 
+          <Route exact={true} 
+          path={'/blogs/' + blog.url} 
+          baseName={'/personal-website-react/blogs' + blog.url}
+          render={() => (
+            <div className="App">
+              <BlogPage blog={ blog }/>
+            </div> )}/>
+          ) }
+
       </BrowserRouter>
     );
   }
