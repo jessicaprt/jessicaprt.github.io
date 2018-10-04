@@ -2,8 +2,10 @@ import React, { Component } from 'react';
 
 import { LandingPage } from './LandingPage';
 import { AllBlogs } from './AllBlogs';
+import { BlogPage } from './BlogPage';
 
 import { BrowserRouter, Route } from 'react-router-dom';
+import axios from 'axios';
 
 class App extends Component {
   constructor(props) {
