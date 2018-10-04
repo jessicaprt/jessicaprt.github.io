@@ -36,12 +36,12 @@
     "projects" : {
         "A" : {
           "name" : "Hotspot",
-          "imgUrl" : "/assets/projects/hotspot2.jpg",
+          "imgUrl" : "./assets/projects/hotspot2.jpg",
           "desc" : "This is hotspot"
         },
         "B" : {
           "name" : "DigiExpress",
-          "imgUrl" : "/assets/projects/digiexpress3.jpg",
+          "imgUrl" : "./assets/projects/digiexpress3.jpg",
           "desc" : "bdesc"
         },
         "C" : {
