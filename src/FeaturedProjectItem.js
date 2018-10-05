@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export class ProjectItem extends Component {
+export class FeaturedProjectItem extends Component {
     render() {
         return(
             <div className="projectItem">

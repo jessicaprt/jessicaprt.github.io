@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import { LandingPage } from './LandingPage';
 import { AllBlogs } from './AllBlogs';
 import { BlogPage } from './BlogPage';
+import { Projects } from './Projects';
 
 import { BrowserRouter, Route } from 'react-router-dom';
 import axios from 'axios';
@@ -25,7 +26,6 @@ class App extends Component {
               this.setState({ blogs }) })
 
           .catch((error) => {
-            // Error
             if (error.response) {
               console.log("blogs.json shouldn't load here");
             }
@@ -43,6 +43,15 @@ class App extends Component {
             render={() => (
               <div className="App">
                 <LandingPage />
+              </div>
+          )}/>
+
+          <Route exact={true} 
+            path='/projects' 
+            baseName='/projects'
+            render={() => (
+              <div className="App">
+                <Projects />
               </div>
           )}/>
 

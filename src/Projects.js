@@ -15,10 +15,8 @@ export class Projects extends Component {
         this.state = {
             projects : [],
             active_tags : [],
-            removing: ''
         }
-    }
-    
+    }    
 
     componentDidMount() {
         axios.get('./projects.json')
@@ -33,14 +31,26 @@ export class Projects extends Component {
         tags = this.state.active_tags;
 
         if (!tags.includes(tag)) {
-            console.log("not found.. adding");
             tags.push(tag);
             this.setState({active_tags : tags});
         } 
     }
 
-    handleClick(tag) {
-        console.log("trying to remove: " + tag.eventKey);
+    handleClick(tagToRemove) {
+        var tags = [];
+        var after = []
+        tags = this.state.active_tags;
+
+        for (var i=0; i<tags.length; i++){
+            console.log(i);
+            console.log(tags[i]);
+            if (tags[i] !== tagToRemove)
+                after.push(tags[i]);
+            else 
+                console.log("removing: " + tags[i]);
+        }
+
+        this.setState({active_tags : after});
     }
 
     renderActiveTags(active_tags) {
@@ -48,11 +58,11 @@ export class Projects extends Component {
             (active_tags.length !== 0) ? 
                 <ul className="activeFilters filterInput">
                     { active_tags.map((tag) =>
-                        <li>
-                            { tag }
-                            <Button 
-                                onClick={ this.handleClick.bind(this) }
-                                key={ tag }>x</Button></li>) }
+                        <li
+                            key={tag}>{ tag }
+                            <button 
+                                text={tag + " x"}
+                                onClick={() => this.handleClick(tag)}>x</button></li>) }
             </ul> : null
         );
     }
@@ -71,8 +81,9 @@ export class Projects extends Component {
         return (
             <div>
                 { allTags.map((tag) =>  
-                    <MenuItem 
+                    <MenuItem
                         eventKey={ tag }
+                        key={ tag }
                         onSelect={ this.handleSelect.bind(this) }>{ tag }</MenuItem> )}         
             </div>);
     }
