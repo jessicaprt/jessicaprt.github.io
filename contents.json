@@ -1,5 +1,5 @@
 { "contents" : {
-    "aboutMe" : "Hello! i'm Jessica Prieto. I graduated from University of Alberta with a degree in Computer Engineering. I am passionate at creating mobile applications, currently Android applications, and I'm absolutetly dedicated to discover more and more techniques and to keep updated with the technologies. I also have a knack for web applications building back-end services for websites and coming up with the UI/UX design ideas.",
+    "aboutMe" : "Hello! I'm Jessica Prieto. I am a Web Enthusiast and a Front-End Developer. I really enjoy designing websites and as well as writing code to bring them to life. ",
     "skills_highlight" : {
         "A" : {
           "name" : "Web Dev",
@@ -18,7 +18,8 @@
           "imgUrl" : "./assets/icons/ic_phone_android.png",
           "description" : "I also enjoy developing the design and full functionality of mobile apps particularly for android.",
           "skills" : [
-            ["android", "80%"]
+            ["Android Studio", "90%"],
+            ["Custom view elements", "85%"]
           ]
         },
         "C" : {
