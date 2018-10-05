@@ -9,7 +9,9 @@ export class NavBar extends React.Component {
     <div className="Navigation">
       <div className="navLine"></div>
       <Navbar inverse collapseOnSelect
-        className="mainNav">
+        className="mainNav"
+        fixedTop
+        default>
         <Navbar.Header>
           <Navbar.Toggle />
           <Navbar.Brand>

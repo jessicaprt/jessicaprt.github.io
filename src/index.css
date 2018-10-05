@@ -6,6 +6,9 @@ body
 .center
 { text-align: center; }
 
+.hide-element
+{ opacity: 0; }
+
 .purpleBackground
 { background-color: rgba(126, 106, 140, 0.7); }
 
@@ -42,7 +45,7 @@ body
   color: rgba(152, 136, 174, 0.61) !important; }
 
 .Navigation
-{ margin-bottom: 5vh; }
+{ margin-bottom: 2vh; }
 
 .mainNav
 { background-color: rgba(0,0,0,0);
@@ -63,9 +66,27 @@ body
 .navbar-inverse .navbar-nav>li>a:hover
 { color: rgba(152, 136, 174, 0.5); }
 
+.navbar
+{ -webkit-transition: 0.4s ease;
+  -moz-transition: 0.4s ease;
+  transition: 0.4s ease; }
+
+.navbar-brand
+{ font-size: 25px !important; 
+  margin-right: 50px;}
+
+.shrink 
+{ height: 8vh;
+  background-color: rgba(255,255,255,1); 
+  box-shadow: 0px 1px 10px 1px rgba(0,0,0,0.1); 
+  padding: 2vh 5vh 7vh 5vh; }
+
+.shrink .navbar-brand
+{ font-size: 20px !important; }
+
 .header
 { height: 70vh;
-  background-color: #999;
+  margin: 0;
   background-image: url('./assets/banner.jpg'); 
   background-size: cover; 
   background-position: bottom }
@@ -97,7 +118,7 @@ body
   background-position: right;
   color: #555; 
   font-size: 20px;
-  padding: 8vh 0 12vh 0; }
+  padding: 8vh 0 30vh 0; }
 
 .AboutDescription
 { padding: 15vh 5vh 0 5vh; }
@@ -133,7 +154,7 @@ body
 { text-align: left; }
 
 .skillItemRate
-{ width: 7vw; }
+{ width: 0%; }
 
 .skillComponent
 { padding: 3px 8px; }
@@ -185,7 +206,8 @@ body
   text-align: center; }
 
 .projectsContainer
-{ position: static; }
+{ position: static; 
+  padding-bottom: 15vh; }
 
 .projectsTitleContainer
 { position: static; }
@@ -218,10 +240,10 @@ body
   right: 0}
 
 .projectsLine
-{ height: 30px;
+{ height: 10px;
   width: 100%;
   margin-top: 10vh; 
-  background-color: rgba(126, 106, 140, 0.4) }
+  background-color: rgba(126, 106, 140, 0.2) }
 
 .projectImages
 { width: 100%; 
@@ -314,16 +336,19 @@ body
 .aButton:hover
 { text-decoration: none; }
 
+.mainButtonWrapper
+{ border: 2px solid rgba(126, 106, 140, 0.5);
+  padding: 10px;
+  height: 8vh;  
+  margin: 5vh auto; }
+
 .mainButton
-{ margin: 5vh auto; 
-  width: 40vw; 
+{ height: 8vh; 
   padding: 1.5vh 3vh;
-  border: 2px solid rgba(126, 106, 140, 0.5);
-  border-radius: 8px;
   text-align: center;
-  background-color: rgba(0,0,0,0);
-  color:  rgba(126, 106, 140, 0.8);
-  font-size: 18px; }
+  background-color: rgba(126, 106, 140, 1);
+  color: #eee;
+  font-size: 3vh; }
 
 .mainButton:hover
 { background-color: rgba(0,0,0,0.1);}
@@ -456,6 +481,19 @@ body
 
   .navbar-header a
   { color: #fff !important; }
+
+  .mainNav
+  { padding: 0; }
+
+  .AboutImageContainer
+  { width: 100%;
+    padding: 0 7vh; }
+
+  .skill
+  { padding: 0 6vh }
+
+  .skillItemRate
+  { }
 
   .navbar-collapse 
   { border: 0;

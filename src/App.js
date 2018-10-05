@@ -53,7 +53,6 @@ class App extends Component {
                 <AllBlogs />
               </div>
           )}/>
-        </div>
 
         { this.state.blogs.map((blog) => 
           <Route exact={true} 
@@ -64,6 +63,7 @@ class App extends Component {
               <BlogPage blog={ blog }/>
             </div> )}/>
           ) }
+        </div>
 
       </BrowserRouter>
     );

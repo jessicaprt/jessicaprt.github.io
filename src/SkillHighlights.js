@@ -3,49 +3,33 @@ import { Skill } from './Skill.js';
 import Grid from 'react-bootstrap/lib/Grid';
 import Row from 'react-bootstrap/lib/Row';
 import Col from 'react-bootstrap/lib/Col';
-import axios from 'axios';
 
 export class SkillHighlights extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            skillsHighlight : []
-        }
-    }   
-    
-    componentDidMount() {
-        axios.get('./contents.json')
-        .then (response => {
-            const skillsHighlight = response.data.contents.skills_highlight;
-            this.setState({ skillsHighlight })
-        });
-    }
 
     renderSkillHighlights() {
-        if (this.state.skillsHighlight.length !== 0) {
-            return(
-                <Row>
-                    <Col sm={4} className="skill"><div className="skillBorder">
-                            <Skill 
-                                name={ this.state.skillsHighlight.A.name }
-                                imgUrl={ this.state.skillsHighlight.A.imgUrl }
-                                description={ this.state.skillsHighlight.A.description }
-                                skills = { this.state.skillsHighlight.A.skills }/></div></Col>
-                    <Col sm={4} className="skill"><div className="skillBorder">
-                            <Skill 
-                                name={ this.state.skillsHighlight.B.name }
-                                imgUrl={ this.state.skillsHighlight.B.imgUrl }
-                                description={ this.state.skillsHighlight.B.description }
-                                skills = { this.state.skillsHighlight.B.skills }/></div></Col>
-                    <Col sm={4} className="skill"><div className="skillBorder">
-                            <Skill 
-                                name={ this.state.skillsHighlight.C.name }
-                                imgUrl={ this.state.skillsHighlight.C.imgUrl }
-                                description={ this.state.skillsHighlight.C.description }
-                                skills = { this.state.skillsHighlight.C.skills }/></div></Col>
-                </Row>);
-        }
+        return(
+            <Row>
+                <Col sm={4} className="skill"><div className="skillBorder">
+                        <Skill 
+                            name={ this.props.skills.A.name }
+                            imgUrl={ this.props.skills.A.imgUrl }
+                            description={ this.props.skills.A.description }
+                            skills = { this.props.skills.A.skills }/></div></Col>
+                <Col sm={4} className="skill"><div className="skillBorder">
+                        <Skill 
+                            name={ this.props.skills.B.name }
+                            imgUrl={ this.props.skills.B.imgUrl }
+                            description={ this.props.skills.B.description }
+                            skills = { this.props.skills.B.skills }/></div></Col>
+                <Col sm={4} className="skill"><div className="skillBorder">
+                        <Skill 
+                            name={ this.props.skills.C.name }
+                            imgUrl={ this.props.skills.C.imgUrl }
+                            description={ this.props.skills.C.description }
+                            skills = { this.props.skills.C.skills }/></div></Col>
+            </Row>);
     }
+    
     render() {
         return(
             <div className="Highlights purpleBackground">

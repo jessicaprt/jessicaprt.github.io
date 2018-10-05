@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import Grid from 'react-bootstrap/lib/Grid';
+import Row from 'react-bootstrap/lib/Row';
+import Col from 'react-bootstrap/lib/Col';
 
 import { BlogItem } from './BlogItem.js';
 
-export class FeaturedBlog extends Component {
+export class FeaturedBlogs extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -79,8 +81,11 @@ export class FeaturedBlog extends Component {
                 <Grid> <h1 className="Oswald-font blogTitle purpleFont">Blog</h1>
                     { this.renderBlog(this.state.blogs) }
 
-                <a href="/blogs/all_blogs" className="aButton">
-                    <div className="mainButton Oswald-font">- View all Blogs -</div></a>
+                    <Row><Col sm={4} smOffset={4}>
+                    <div className="mainButtonWrapper">
+                        <a href="/blogs/all_blogs" className="aButton">
+                            <div className="mainButton Oswald-font">- View all Blogs -</div></a></div>
+                        </Col></Row>
                 
                 </Grid></div>
         );
