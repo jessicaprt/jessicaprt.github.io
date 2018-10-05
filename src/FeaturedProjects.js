@@ -9,13 +9,13 @@ export class FeaturedProjects extends Component {
     renderProjects() {
         return(
             <Row className="projectsContainer">
-                <Col sm={4}><ProjectItem 
+                <Col sm={4}><FeaturedProjectItem 
                     imgUrl={ this.props.projects.A.imgUrl }
                     title={ this.props.projects.A.name } /></Col>
-                <Col sm={4}><ProjectItem 
+                <Col sm={4}><FeaturedProjectItem 
                     imgUrl={ this.props.projects.B.imgUrl }
                     title={ this.props.projects.B.name } /></Col>
-                <Col sm={4}><ProjectItem 
+                <Col sm={4}><FeaturedProjectItem 
                     imgUrl={ this.props.projects.C.imgUrl }
                     title={ this.props.projects.C.name } /></Col>
             </Row>

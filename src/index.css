@@ -459,30 +459,65 @@ body
 /** end BLOG PAGES **/
 
 /** PROJECTS PAGE **/
+.ProjectsPage
+{ margin-top: 8vh; 
+  padding-top: 5vh; }
+  
 .projectsPageTitle
 { text-align: center }
 
 .activeFilters
-{ margin: 2vh; }
+{ margin: 0 2vh; }
 
 .filterInput 
 { display: inline-block; }
 
-.activeFilters li
-{ display: inline-block; 
-  border: 1px solid black;
-  padding: 2px 5px; 
+.dropdown-menu
+{ padding: 0 15px; }
+
+.filterMenuItems
+{ padding: 2px 0; 
+  color: #000;}
+
+.activeTag
+{ display: inline-block;
+  border-radius: 14px;
+  background-color: rgba(239, 223, 187, 0.5);
+  padding: 5px 15px; 
   margin: 0 10px; }
+
+.removeTagButton
+{ margin-left: 10px;
+  background-color: rgba(239, 223, 187, 0);
+  border: 0px;  }
+
+.filteredProjects
+{ margin-top: 3vh; 
+  margin-bottom: 15vh; }
+
+.mProjectWrapper 
+{ border: 5px solid rgba(239, 223, 187, 0.5);
+  width: 70%; 
+  padding: 15px }
+
+.filteredProjects img
+{ width: 100%; 
+  border: 1px solid rgba(126, 106, 140, 0.7); 
+  margin-bottom: -30px; }
+
+.mProjectsItem
+{ padding: 4vh 0; 
+  border-bottom: 1px solid #000; }
 
 
 /** end PROJECTS PAGE **/
 
 @media (max-width: 768px) {
   .navbar-header
-  { background-color: rgba(126, 106, 140, 0.7); }
+  { background-color: rgba(126, 106, 140, 0.7) }
 
   .navbar-header a
-  { color: #fff !important; }
+  { color: #fff !important }
 
   .mainNav
   { padding: 0; }

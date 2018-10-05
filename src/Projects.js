@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
+
 import Grid from 'react-bootstrap/lib/Grid';
 import Button from 'react-bootstrap/lib/Button';
 import DropdownButton from 'react-bootstrap/lib/DropdownButton';
 import MenuItem from 'react-bootstrap/lib/MenuItem';
-
 import axios from 'axios';
 
+import { ProjectItem } from './ProjectItem';
 import { PlainHeader } from './PlainHeader';
+import { Footer } from './Footer';
 
 export class Projects extends Component {
 
@@ -38,19 +40,16 @@ export class Projects extends Component {
 
     handleClick(tagToRemove) {
         var tags = [];
-        var after = []
         tags = this.state.active_tags;
 
         for (var i=0; i<tags.length; i++){
-            console.log(i);
-            console.log(tags[i]);
-            if (tags[i] !== tagToRemove)
-                after.push(tags[i]);
+            if (tags[i] === tagToRemove)
+                tags.splice(i,1);
             else 
                 console.log("removing: " + tags[i]);
         }
 
-        this.setState({active_tags : after});
+        this.setState({active_tags : tags});
     }
 
     renderActiveTags(active_tags) {
@@ -58,17 +57,59 @@ export class Projects extends Component {
             (active_tags.length !== 0) ? 
                 <ul className="activeFilters filterInput">
                     { active_tags.map((tag) =>
-                        <li
+                        <li className="activeTag Oswald-font"
                             key={tag}>{ tag }
                             <button 
+                                className="removeTagButton"
                                 text={tag + " x"}
                                 onClick={() => this.handleClick(tag)}>x</button></li>) }
             </ul> : null
         );
     }
 
-    fetchTags(projects) {
+    renderFilteredProjects(projects) {
+        var filteredProjects = this.getFilteredProjects(projects);
         
+        return ( 
+            <div>
+                { (this.state.active_tags.length !== 0) ?
+                    this.renderProjects(filteredProjects) :
+                    this.renderProjects(projects) } </div>);      
+    }
+
+    renderProjects(projects) {
+        console.log("rendering..");
+        console.log(projects);
+
+        return(
+            <div className="filteredProjects">
+                { projects.map((proj) =>
+                    <ProjectItem
+                        key={ proj.name }
+                        title={ proj.name }
+                        description={ proj.description }
+                        tags={ proj.tags }
+                        image={ proj.image_link }/>)}
+            </div>
+        );
+    }
+
+    getFilteredProjects(projects) {
+        var activeTags = this.state.active_tags;
+        var filteredProjects = [];
+
+        for(var i=0; i<projects.length; i++) {
+            var currentTags = projects[i].tags;
+            for(var k=0; k<currentTags.length; k++)
+                if (activeTags.includes(currentTags[k]))
+                    filteredProjects.push(projects[i]);
+        }
+
+        return filteredProjects;
+    }
+
+
+    fetchTags(projects) {
         var tagsSet = new Set([]);
         var allTags = [];
 
@@ -82,6 +123,7 @@ export class Projects extends Component {
             <div>
                 { allTags.map((tag) =>  
                     <MenuItem
+                        className="filterMenuItems"
                         eventKey={ tag }
                         key={ tag }
                         onSelect={ this.handleSelect.bind(this) }>{ tag }</MenuItem> )}         
@@ -99,7 +141,7 @@ export class Projects extends Component {
                     <h1 className="projectsPageTitle Oswald-font purpleFont">Projects</h1>
                     
                     <DropdownButton
-                        className="filterInput"
+                        className="filterInput filterDropdown"
                         bsStyle='default'
                         title="select a filter"
                         id="dropdown-basic">
@@ -109,9 +151,12 @@ export class Projects extends Component {
 
                     { this.renderActiveTags(this.state.active_tags) }
 
+                    { this.renderFilteredProjects(this.state.projects) }
+
                   
               </div>
             </Grid> : null }
+            <Footer/>  
         </div>);
     }
 }
