@@ -50,7 +50,7 @@ body
 .mainNav
 { background-color: rgba(0,0,0,0);
   border: 0px;
-  padding-top: 5vh; }
+  padding-top: 2vh; }
 
 .navbar-toggle
 { float: none;
@@ -67,22 +67,22 @@ body
 { color: rgba(152, 136, 174, 0.5); }
 
 .navbar
-{ -webkit-transition: 0.4s ease;
-  -moz-transition: 0.4s ease;
-  transition: 0.4s ease; }
+{ -webkit-transition: 0.4s ease !important;
+  -moz-transition: 0.4s ease !important;
+  transition: 0.4s ease !important; }
 
-.navbar-brand
-{ font-size: 25px !important; 
+.header.Navigation.mainNav.container.navbar-header.navbar-brand
+{ font-size: 25px; 
   margin-right: 50px;}
 
-.shrink 
+.header .shrink 
 { height: 8vh;
   background-color: rgba(255,255,255,1); 
   box-shadow: 0px 1px 10px 1px rgba(0,0,0,0.1); 
   padding: 2vh 5vh 7vh 5vh; }
 
 .shrink .navbar-brand
-{ font-size: 20px !important; }
+{ font-size: 20px; }
 
 .header
 { height: 70vh;
@@ -99,8 +99,11 @@ body
 .plainHeader .mainNav
 { margin: 0; 
   padding: 2vh;
-  background-color: rgba(126, 106, 140, 0.7);
-  border-radius: 0; }
+  background-color: rgba(126, 106, 140, 1);
+  border-radius: 0; 
+  -webkit-transition: 0.4s ease;
+  -moz-transition: 0.4s ease;
+  transition: 0.4s ease;}
 
 .plainHeader .navbar-header a
 { color: #ddd !important; }
@@ -326,7 +329,7 @@ body
 
 .fBlogContent a:hover
 { text-decoration: none;
-  color: rgba(255,255,255,0.7) }
+  color: rgba(0,0,0,0.6) }
 
 .fBlogItemsLine
 { height: 2px;
@@ -351,7 +354,7 @@ body
   font-size: 3vh; }
 
 .mainButton:hover
-{ background-color: rgba(0,0,0,0.1);}
+{ background-color: #342C3A;}
 
 .instagram
 { margin: 0 auto; 
@@ -414,7 +417,8 @@ body
 
 /** BLOG PAGES **/
 .blogPage
-{ font-size: 17px; }
+{ font-size: 17px; 
+  margin-top: 15vh; }
 
 .blogContentPar
 { text-indent: 30px; }
@@ -451,8 +455,6 @@ body
   margin: 2vh auto; 
   padding: 2vh 2vh; 
   color: rgba(126, 106, 140, 0.9) }
-
-
 
 /** end BLOG PAGES **/
 
@@ -491,9 +493,6 @@ body
 
   .skill
   { padding: 0 6vh }
-
-  .skillItemRate
-  { }
 
   .navbar-collapse 
   { border: 0;
