@@ -32,7 +32,6 @@ $(document).ready(function(){
 
 $(window).scroll(function() {
     if ($(document).scrollTop() > 50) {
-        console.log("SHRINK!");
         $('nav').addClass('shrink');
     } else {
         $('nav').removeClass('shrink');

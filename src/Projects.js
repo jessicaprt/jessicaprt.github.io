@@ -96,14 +96,17 @@ export class Projects extends Component {
 
     getFilteredProjects(projects) {
         var activeTags = this.state.active_tags;
+        var filteredProjectsSet = new Set([]);
         var filteredProjects = [];
 
         for(var i=0; i<projects.length; i++) {
             var currentTags = projects[i].tags;
             for(var k=0; k<currentTags.length; k++)
-                if (activeTags.includes(currentTags[k]))
-                    filteredProjects.push(projects[i]);
+                if ( activeTags.includes(currentTags[k]) )
+                filteredProjectsSet.add(projects[i]);
         }
+
+        filteredProjects = Array.from(filteredProjectsSet);
 
         return filteredProjects;
     }
