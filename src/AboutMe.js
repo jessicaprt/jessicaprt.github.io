@@ -7,7 +7,7 @@ export class AboutMe extends Component {
     render() {
         return (
             <div className="AboutMe" id="about-me">
-                <Grid className="description hide-element">
+                <Grid className="description">
                     <Row>
                         <Col sm={4} className="AboutImageContainer">
                             <div className="AboutWrapper">

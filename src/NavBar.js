@@ -20,16 +20,16 @@ export class NavBar extends React.Component {
         </Navbar.Header>
         <Navbar.Collapse>
           <Nav>
-            <NavItem eventKey={1} href="/#about-me" className="navItem">
+            <NavItem eventKey={1} href="/#about-me" className="navItem linkItem">
               About Me</NavItem>
-            <NavItem eventKey={2} href="/#projects" className="navItem">
+            <NavItem eventKey={2} href="/#projects" className="navItem linkItem">
               Projects</NavItem>
-            <NavItem eventKey={3} href="/#blog" className="navItem">
+            <NavItem eventKey={3} href="/#blog" className="navItem linkItem">
               Blog</NavItem>
-            <NavItem eventKey={4} href="/#instagram" className="navItem">
+            <NavItem eventKey={4} href="/#instagram" className="navItem linkItem">
               Instagram
             </NavItem>
-            <NavItem eventKey={5} href="/#contact" className="navItem">
+            <NavItem eventKey={5} href="/#contact" className="navItem linkItem">
               Contact Info
             </NavItem>
           </Nav>

@@ -17,21 +17,16 @@ class App extends Component {
   }
   
   componentDidMount() {
-    var sites = ['http://localhost:3000/', 'https://jessicaprt.github.io/personal-website-react/', 'https://test.jessica.prieto.ca/'];
-    
-    if ( !sites.includes(window.location.href) ) {
-      axios.get('./blogs.json')
-          .then ((response) => {
-              const blogs = response.data.blogs;
-              this.setState({ blogs }) })
+    axios.get('./blogs.json')
+      .then ((response) => {
+          const blogs = response.data.blogs;
+          this.setState({ blogs }) })
 
-          .catch((error) => {
-            if (error.response) {
-              console.log("blogs.json shouldn't load here");
-            }
-          } );
-    }
-    
+      .catch((error) => {
+        if (error.response) {
+          console.log("blogs.json shouldn't load here");
+        }
+      } );
   }
 
   render() {
@@ -47,7 +42,7 @@ class App extends Component {
           )}/>
 
           <Route exact={true} 
-            path='/projects' 
+            path='/projects/all_projects' 
             baseName='/projects'
             render={() => (
               <div className="App">
@@ -65,12 +60,12 @@ class App extends Component {
 
         { this.state.blogs.map((blog) => 
           <Route exact={true} 
-          path={'/blogs/' + blog.url} 
-          baseName={'/personal-website-react/blogs' + blog.url}
-          render={() => (
-            <div className="App">
-              <BlogPage blog={ blog }/>
-            </div> )}/>
+            path={'/blogs/' + blog.url} 
+            baseName={'/personal-website-react/blogs' + blog.url}
+            render={() => (
+              <div className="App">
+                <BlogPage blog={ blog }/>
+              </div> )}/>
           ) }
         </div>
 

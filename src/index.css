@@ -6,9 +6,6 @@ body
 .center
 { text-align: center; }
 
-.hide-element
-{ opacity: 0; }
-
 .purpleBackground
 { background-color: rgba(126, 106, 140, 0.7); }
 

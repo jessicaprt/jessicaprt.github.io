@@ -38,7 +38,7 @@ export class FeaturedProjects extends Component {
                         
                         <Row><Col sm={4} smOffset={4}>
                         <div className="mainButtonWrapper">
-                            <a href="/projects" className="aButton">
+                            <a href="/projects/all_projects" className="aButton">
                                 <div className="mainButton Oswald-font">- View all Projects -</div></a></div>
                             </Col></Row>
 
