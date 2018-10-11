@@ -1,16 +1,17 @@
 { "contents" : {
-    "aboutMe" : "Hello! I'm Jessica Prieto. I am a Web Enthusiast and a Front-End Developer. I really enjoy designing websites and as well as writing code to bring them to life. ",
+    "aboutMe" : "Hello! I'm Jessica Prieto. I am a Web Enthusiast and a Front-End Developer. I enjoy designing and building websites. ",
     "skills_highlight" : {
         "A" : {
           "name" : "Web Dev",
           "imgUrl" : "./assets/icons/ic_desktop.png",
-          "description" : "I enjoy designing and developing web UI/UX. Aside from front-end, I also like exploring back-end dev and create more functionality to a site.",
+          "description" : "I enjoy designing and developing web user interfaces. Aside from front-end, I also like exploring back-end dev and build more functionality to a site.",
           "skills" : [
             ["HTML", "90%"],
             ["CSS", "90%"],
             ["React", "50%"],
             ["Bootstrap", "70%"],
             ["jQuery", "60%"],
+            ["C#", "45%"],
             ["ASP.NET", "40%"]]
         },
         "B" : {
