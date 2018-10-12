@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import Grid from 'react-bootstrap/lib/Grid';
 import Row from 'react-bootstrap/lib/Row';
 import Col from 'react-bootstrap/lib/Col';
+import Button from 'react-bootstrap/lib/Button';
 import FormGroup from 'react-bootstrap/lib/FormGroup';
 import ControlLabel from 'react-bootstrap/lib/ControlLabel';
 import FormControl from 'react-bootstrap/lib/FormControl';
@@ -18,18 +19,8 @@ export class BlogGenerator extends Component {
             url: '',
             image: '',
             tags: [],
-            body: [],
-            pictures: [],
-            imageExists: false,
-            imageError: false
+            body: []
         };
-    }
-
-
-    onDrop(picture) {
-        this.setState({
-            pictures: this.state.pictures.concat(picture),
-        });
     }
 
     handleTitleChange(e) {
@@ -55,17 +46,21 @@ export class BlogGenerator extends Component {
     validateUrl() {
         if (/\s/.test(this.state.url))
             return 'error';
-        else if (this.state.url === '') return 'warning';
-        else return 'success';
+        else if (this.state.url === '')
+            return 'warning';
+        else
+            return 'success';
     }
 
     validateBlank(inputItem) {
-        if(inputItem.length === 0) return 'warning';
+        if(inputItem.length === 0)
+            return 'warning';
         else return 'success';
     }
 
     validateImage() {
-        if (this.state.imageExists) return 'success';
+        if (this.state.imageExists)
+            return 'success';
         else if (this.state.image === '') return 'warning';
         else return 'error';
     }
@@ -73,6 +68,23 @@ export class BlogGenerator extends Component {
     renderImageError(e) {
         this.setState({ imageExists : false });
         return(<div>error</div>);
+    }
+
+    checkAllInputs() {
+        return (
+            (this.validateBlank(this.state.title) !== 'warning') &&
+            (this.validateBlank(this.state.body) !== 'warning') &&
+            (this.validateImage() !== 'error') && 
+            (this.validateImage() !== 'warning') &&
+            (this.validateUrl() !== 'error') && 
+            (this.validateUrl() !== 'warning'));
+        }
+
+    makeBlogPost(e) {
+        if (this.checkAllInputs()) {
+        } else {
+            alert("invalid input! check all input fields");
+        }
     }
 
     render() {
@@ -133,8 +145,9 @@ export class BlogGenerator extends Component {
                                         alt={ this.state.image }
                                         onError={ this.renderImageError.bind(this) } /></Col> : 
                                     
-                                        (this.state.image != '') ? <p>image not found</p> : null }
+                                        (this.state.image !==  '') ? <p>image not found</p> : null }
                         </Row>
+                        <Row className="bgButton" onClick={ this.makeBlogPost.bind(this) }><Button>Create Blog Post</Button></Row>
                     </form>
                 </Grid> : 
                 <div>No access to this page</div> }</div>

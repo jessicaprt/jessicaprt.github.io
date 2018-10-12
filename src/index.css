@@ -518,6 +518,10 @@ body
 
 .bgImage
 { width: 100%; }
+
+.bgButton
+{ margin: 2vh auto; 
+  text-align: center;}
 /** end BLOG GENERATOR **/
 
 @media (max-width: 768px) {
