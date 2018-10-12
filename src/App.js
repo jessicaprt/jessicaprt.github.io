@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import { LandingPage } from './LandingPage';
 import { AllBlogs } from './AllBlogs';
+import { BlogGenerator } from './BlogGenerator';
 import { BlogPage } from './BlogPage';
 import { Projects } from './Projects';
 
@@ -58,15 +59,25 @@ class App extends Component {
               </div>
           )}/>
 
-        { this.state.blogs.map((blog) => 
-          <Route exact={true} 
-            path={'/blogs/' + blog.url} 
-            baseName={'/personal-website-react/blogs' + blog.url}
-            render={() => (
-              <div className="App">
-                <BlogPage blog={ blog }/>
-              </div> )}/>
-          ) }
+          { this.state.blogs.map((blog) => 
+            <Route exact={true} 
+              key={ blog.url }
+              path={ '/blogs/' + blog.url } 
+              baseName={'/personal-website-react/blogs' + blog.url}
+              render={() => (
+                <div className="App">
+                  <BlogPage blog={ blog }/>
+                </div> )}/>
+            ) }
+
+            <Route exact={true} 
+              path='/blogs/new_blog'
+              render={() => (
+                <div className="App">
+                  <BlogGenerator />
+                </div>
+            )}/>
+
         </div>
 
       </BrowserRouter>

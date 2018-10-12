@@ -509,6 +509,17 @@ body
 
 /** end PROJECTS PAGE **/
 
+/** BLOG GENERATOR **/
+.blogGenerator
+{ margin-top: 2vh; }
+
+.blogGenerator h1
+{ margin-bottom: 5vh; }
+
+.bgImage
+{ width: 100%; }
+/** end BLOG GENERATOR **/
+
 @media (max-width: 768px) {
   .navbar-header
   { background-color: rgba(126, 106, 140, 0.7) }
