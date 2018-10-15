@@ -15,7 +15,7 @@ $(document).ready(function(){
 	});
 
 	var src = $('.header').css('background-image');
-	var url = src.match(/\((.*?)\)/)[1].replace(/('|")/g,'');
+	var url = './assets/banner.jpg';
 	
 	var img = new Image();
 	img.onload = function() {
