@@ -6,33 +6,33 @@
           "imgUrl" : "./assets/icons/ic_desktop.png",
           "description" : "I enjoy designing and developing web user interfaces. Aside from front-end, I also like exploring back-end dev and build more functionality to a site.",
           "skills" : [
-            ["HTML", "90%"],
-            ["CSS", "90%"],
-            ["React", "50%"],
-            ["Bootstrap", "70%"],
-            ["jQuery", "60%"],
-            ["C#", "45%"],
-            ["ASP.NET", "40%"]]
+            "building static web pages with HTML/CSS",
+            "developing user interfaces with React",
+            "creating responsive sites",
+            "using other web tools such as jQuery and Bootstrap",
+            "building a full web application with ASP.NET and C#"]
         },
         "B" : {
           "name" : "Mobile Dev",
           "imgUrl" : "./assets/icons/ic_phone_android.png",
           "description" : "I also enjoy developing the design and full functionality of mobile apps particularly for android.",
           "skills" : [
-            ["Android Studio", "90%"],
-            ["Custom view elements", "85%"]
-          ]
+            "Android Studio",
+            "developing reuseable custom views",
+            "integrated apps with back-end services",
+            "using third-party libraries",
+            "familiar with material design guidelines"]
         },
         "C" : {
           "name" : "Hobbies",
           "imgUrl" : "./assets/icons/ic_lightbulb.png",
           "description" : "Being active is something I really enjoy doing. Easy to say, I love being outdoors!",
           "skills" : [
-            ["hiking & camping", "90%"],
-            ["playing music", "85%"],
-            ["photography", "70%"],
-            ["traveling", "75%"]
-          ]
+            "going on hiking trips on the mountains",
+            "camping and going outdoors",
+            "going on an airplane",
+            "exploring new places and doing photography",
+            "performing music on stage and creating covers"]
         }
     },
     "projects" : {
