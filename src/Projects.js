@@ -9,6 +9,7 @@ import axios from 'axios';
 import { ProjectItem } from './ProjectItem';
 import { PlainHeader } from './PlainHeader';
 import { Footer } from './Footer';
+import { LoadingIndicator } from './LoadingIndicator'; 
 
 export class Projects extends Component {
 
@@ -136,10 +137,9 @@ export class Projects extends Component {
     render() {
         return(
         <div className="ProjectsPage">
-            <PlainHeader />
-
             { (this.state.projects.length !== 0) ?
                 <div>
+                    <PlainHeader />
                     <Grid>
                         <div>
                             <h1 className="projectsPageTitle Oswald-font purpleFont">Projects</h1>
@@ -159,7 +159,7 @@ export class Projects extends Component {
                             
                         </div></Grid><Footer/> </div> 
                     
-                    : null }
+                    : <LoadingIndicator /> }
             
         </div>);
     }

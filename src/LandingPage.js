@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
+
+import { LoadingIndicator } from './LoadingIndicator'; 
 import { Header }           from './Header';
 import { AboutMe }          from './AboutMe';
 import { SkillHighlights }  from './SkillHighlights';
 import { FeaturedProjects } from './FeaturedProjects';
 import { FeaturedBlogs }    from './FeaturedBlogs';
 import { Instagram }        from './Instagram'
-import { ContactInfo }      from './ContactInfo'; 
-
-import RingLoader from 'react-spinners/RingLoader';
-
+import { ContactInfo }      from './ContactInfo';
 
 import axios from 'axios';
 
@@ -19,8 +18,7 @@ export class LandingPage extends Component {
             ready : false,
             aboutMe : "",
             skills : [],
-            projects : [],
-            loading: true
+            projects : []
         }
     }
 
@@ -44,14 +42,7 @@ export class LandingPage extends Component {
             <div className="LandingPage">
                 { (this.state.ready) ?
                     <div>
-                        <div id="loadingIndicator" className="loadingIndicator">
-                            <div className="ringLoader">
-                                <RingLoader
-                                    sizeUnit={"px"}
-                                    size={150}
-                                    color={'#fff'}
-                                    loading={this.state.loading}
-                                    /></div></div>
+                        <LoadingIndicator />
                         <Header />
                         <AboutMe content={ this.state.aboutMe }/>
                         <SkillHighlights skills={ this.state.skills }/>
