@@ -21,7 +21,7 @@
 		},
 		{
 			"id" : 2,
-			"name" : "Blog Generator",
+			"name" : "Blog Generator v1",
 			"description" : "Blog Generator is a simple python script that converts a json file (containing the blog contents and details) to a static web page (in html). The aim of this project is to make blogging easier and avoids hosting costs (free with Github pages)",
 			"github_link" : "https://github.com/jessicaprt/website-latest/tree/master/blog-generator",
 			"tags" : ["python", "web"],
@@ -44,6 +44,15 @@
 			"github_link" : "https://github.com/CMPUT301F17T15/CIA",
 			"tags" : ["android", "java"],
 			"image_link" : "habit-manager.jpg",
+			"featured_status" : null
+		},
+		{
+			"id" : 5,
+			"name" : "My wedding website",
+			"description" : "This website was used as an information point for guests as well as where guests could RSVP for our wedding day. The front-end was build in React",
+			"github_link" : "",
+			"tags" : ["React", "web"],
+			"image_link" : "wedding-website.jpg",
 			"featured_status" : null
 		}
 	]
