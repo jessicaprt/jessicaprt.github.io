@@ -7,6 +7,8 @@ import { FeaturedBlogs }    from './FeaturedBlogs';
 import { Instagram }        from './Instagram'
 import { ContactInfo }      from './ContactInfo'; 
 
+import RingLoader from 'react-spinners/RingLoader';
+
 
 import axios from 'axios';
 
@@ -17,7 +19,8 @@ export class LandingPage extends Component {
             ready : false,
             aboutMe : "",
             skills : [],
-            projects : []
+            projects : [],
+            loading: true
         }
     }
 
@@ -38,9 +41,17 @@ export class LandingPage extends Component {
     }
     render() {
         return (
-            <div className="App">
+            <div className="LandingPage">
                 { (this.state.ready) ?
                     <div>
+                        <div id="loadingIndicator" className="loadingIndicator">
+                            <div className="ringLoader">
+                                <RingLoader
+                                    sizeUnit={"px"}
+                                    size={150}
+                                    color={'#fff'}
+                                    loading={this.state.loading}
+                                    /></div></div>
                         <Header />
                         <AboutMe content={ this.state.aboutMe }/>
                         <SkillHighlights skills={ this.state.skills }/>

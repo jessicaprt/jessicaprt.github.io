@@ -1,14 +1,5 @@
 import React, { Component } from 'react';
 
-const SkillItemRate = ({ size }) => (
-    <div style={{
-        height: '5px',
-        backgroundColor: 'rgba(126, 106, 140, 0.7)',
-        width: size,
-        color: 'white'
-    }}></div>
-);
-
 export class Skill extends Component {
 
     renderGraph(skills, name) {
