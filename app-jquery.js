@@ -13,6 +13,16 @@ $(document).ready(function(){
 			});
 		}
 	});
+
+	var src = $('.header').css('background-image');
+	var url = src.match(/\((.*?)\)/)[1].replace(/('|")/g,'');
+	
+	var img = new Image();
+	img.onload = function() {
+		$('#loadingIndicator').addClass('stopLoading');
+	}
+	img.src = url;
+	if (img.complete) img.onload();
 });
 
 $(window).scroll(function() {
