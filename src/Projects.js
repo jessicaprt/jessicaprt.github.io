@@ -139,27 +139,28 @@ export class Projects extends Component {
             <PlainHeader />
 
             { (this.state.projects.length !== 0) ?
-            <Grid>
-              <div>
-                    <h1 className="projectsPageTitle Oswald-font purpleFont">Projects</h1>
+                <div>
+                    <Grid>
+                        <div>
+                            <h1 className="projectsPageTitle Oswald-font purpleFont">Projects</h1>
+                            
+                            <DropdownButton
+                                className="filterInput filterDropdown"
+                                bsStyle='default'
+                                title="select a filter"
+                                id="dropdown-basic">
+                                
+                                { this.fetchTags(this.state.projects) }
+                            </DropdownButton>
+
+                            { this.renderActiveTags(this.state.active_tags) }
+
+                            { this.renderFilteredProjects(this.state.projects) }
+                            
+                        </div></Grid><Footer/> </div> 
                     
-                    <DropdownButton
-                        className="filterInput filterDropdown"
-                        bsStyle='default'
-                        title="select a filter"
-                        id="dropdown-basic">
-                        
-                        { this.fetchTags(this.state.projects) }
-                    </DropdownButton>
-
-                    { this.renderActiveTags(this.state.active_tags) }
-
-                    { this.renderFilteredProjects(this.state.projects) }
-
-                  
-              </div>
-            </Grid> : null }
-            <Footer/>  
+                    : null }
+            
         </div>);
     }
 }

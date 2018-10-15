@@ -13,10 +13,7 @@ export class Skill extends Component {
 
     renderGraph(skills, name) {
         return (skills.map((skill) =>
-        <tr key={ name + "-" + skill[0] }>
-            <td className="skillItemName skillComponent"><li className="skillItem">{ skill[0] }</li></td>
-            <td className="skillItemRate skillComponent"><SkillItemRate size={ skill[1] } /></td>
-        </tr> ));
+            <li className="skillItem" key={ name + "-" + skill }>{ skill }</li> ));
     }
 
     render() {
@@ -27,9 +24,8 @@ export class Skill extends Component {
                 <h5 className="skillName Oswald-font">{ this.props.name }</h5>
                 <div className="skillDescription">
                     { this.props.description }
-                    <table className="skillList">
-                        <tbody>{ this.renderGraph(this.props.skills, this.props.name) }</tbody>
-                    </table>   
+                    <ul className="skillList">
+                        { this.renderGraph(this.props.skills, this.props.name) }</ul>
                 </div>
             </div>
         );

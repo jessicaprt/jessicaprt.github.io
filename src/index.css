@@ -151,17 +151,16 @@ body
   padding: 0 3vh; }
 
 .skillItem
-{ text-align: left; }
-
-.skillItemRate
-{ width: 0%; }
+{ text-align: left; 
+  margin: 5px 0; }
 
 .skillComponent
 { padding: 3px 8px; }
 
 .skillList
 { list-style: none; 
-  margin-top: 2vh; }
+  margin-top: 2vh; 
+  padding: 0 5px; }
 
 .skillItem:before 
 { content:"\2714\0020"; 
