@@ -29,7 +29,7 @@ body
 .navBlock
 { display: inline-flex; }
 
-.navbar-header a
+.header .Navigation .navbar-header a
 { font-size: 20px;
   text-decoration: none; 
   color: #9888ae !important; 
@@ -126,7 +126,8 @@ body
   transition: 0.4s ease;}
 
 .plainHeader .navbar-header a
-{ color: #ddd !important; }
+{ color: #ddd;
+  font-size: 20px; }
 
 .plainHeader .navbar-inverse .navbar-nav>li>a
 { color: #eee; 
@@ -546,11 +547,25 @@ body
 /** end BLOG GENERATOR **/
 
 @media (max-width: 768px) {
-  .navbar-header
-  { background-color: rgba(126, 106, 140, 0.7) }
+  .Navigation .navbar-fixed-top
+  { background-color: #fff; }
 
-  .navbar-header a
-  { color: #fff !important }
+  .Navigation .navbar-collapse
+  { background-color: #fff; 
+    border: 0;}
+
+  .Navigation .navbar-header button
+  { background-color: #fff !important }
+
+  .Navigation .navbar-header .icon-bar
+  { background-color: rgba(126, 106, 140, 0.7) !important }
+
+  .plainHeader .navbar-header a
+  { color: rgba(126, 106, 140, 0.7);
+    font-weight: bold; }
+
+  .plainHeader .navbar-inverse .navbar-nav>li>a
+  { color: #777; }
 
   .mainNav
   { padding: 0; }
@@ -561,8 +576,4 @@ body
 
   .skill
   { padding: 0 6vh }
-
-  .navbar-collapse 
-  { border: 0;
-    background-color: rgba(255,255,255,0.7) }
 }

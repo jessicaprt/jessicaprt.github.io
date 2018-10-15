@@ -1,5 +1,5 @@
 import React, { Component } from 'react'; 
-import RingLoader from 'react-spinners/RingLoader';
+import ClipLoader from 'react-spinners/ClipLoader';
 
 export class LoadingIndicator extends Component {
     constructor(props) {
@@ -12,7 +12,7 @@ export class LoadingIndicator extends Component {
         return(
             <div id="loadingIndicator" className="loadingIndicator">
             <div className="ringLoader">
-                <RingLoader
+                <ClipLoader
                     sizeUnit={"px"}
                     size={150}
                     color={'#fff'}
