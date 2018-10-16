@@ -16,46 +16,6 @@
     padding: 2vh 0
   }
 
-  .fblog-item {
-    padding: 2vh; 
-    text-align: left;
-
-    .fblog-image-wrapper {
-      padding: 10px 0;
-      border: 2.5px solid #fff;
-
-      .fblog-images {
-        width: 100%; 
-        margin: 0 -20px -20px 15px;
-      }
-    }
-
-    .fblog-container {
-      padding-left: 3vw;
-
-      .fblog-title {
-        margin-top: 6vh;
-        a {
-          font-size: 25px; 
-          color: $purple;
-          text-decoration: none; 
-        }
-
-        a:hover {
-          color: $faded-purple;
-          text-decoration: none;
-        }
-      }
-
-      .fblog-content {
-        a:hover {
-          text-decoration: none;
-          color: rgba(0,0,0,0.6);
-        }
-      }
-    }
-  }
-
   .fblog-button {
     @extend %main-button-wrapper;
   }

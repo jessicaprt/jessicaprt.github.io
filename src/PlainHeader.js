@@ -4,7 +4,7 @@ import { NavBar } from './NavBar.js';
 export class PlainHeader extends Component {
     render() {
         return (
-            <div className="plainHeader">
+            <div className="plain-header">
                 <NavBar className="plainHeaderNav" />
             </div>
         );

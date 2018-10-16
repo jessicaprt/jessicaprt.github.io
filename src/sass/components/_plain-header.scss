@@ -1,0 +1,37 @@
+.plain-header
+{ background-color: rgba(0,0,0,0);
+  padding: 0;
+  color: #fff;
+
+  .Navigation {
+    .main-nav { 
+      margin: 0; 
+      padding: 2vh;
+      border-radius: 0; 
+      -webkit-transition: 0.4s ease;
+      -moz-transition: 0.4s ease;
+      transition: 0.4s ease;
+      background-color: $purple;
+    }
+  
+    .navbar-header a { 
+      color: #ddd;
+      font-size: 20px; 
+    }
+  
+    .navbar-inverse {
+      .navbar-nav {
+        li {
+          a {
+            color: #eee; 
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  
+    p {
+      color: #fff;
+    }
+  }
+}

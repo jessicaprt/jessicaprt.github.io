@@ -43,12 +43,12 @@ export class AllBlogs extends Component {
     render() {
         
         return(
-            <div>
+            <div className="all-blogs">
                 { (this.state.blogs.length !== 0) ? 
                 <div>
                     <PlainHeader />
                     <Grid>
-                        <h1 className="allBlogsTitle Oswald-font purpleFont">Blog</h1>
+                        <h1 className="all-blogs-title">Blogs</h1>
                         { this.renderBlogs(this.state.blogs) }
                     </Grid>
                     <Footer/>  
