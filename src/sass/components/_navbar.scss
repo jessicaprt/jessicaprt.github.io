@@ -1,0 +1,47 @@
+@import "../helper/variables";
+@import "../helper/mixins";
+
+.main-nav { 
+  background-color: rgba(0,0,0,0);
+  border: 0px;
+  padding-top: 2vh;
+  margin-bottom: 2vh; 
+  -webkit-transition: 0.4s ease !important;
+  -moz-transition: 0.4s ease !important;
+  transition: 0.4s ease !important;
+  font-size: 20px;
+
+  .navbar-header{
+    a {
+      font-size: 20px;
+      text-decoration: none;  
+      font-weight: bold;
+      @include colored-font($purple);
+    }
+
+    a:hover {
+      font-size: 20px;
+      text-decoration: none; 
+      @include colored-font($faded-purple);
+    }
+  }
+  .navbar-toggle {
+    float: none;
+    margin-right: 0; 
+    border: 0;
+    border-radius: 4px; 
+    background-color: rgba(0,0,0,0.2) !important 
+  }
+
+  .navbar-nav {
+    li {
+      a {
+        color: #888; 
+        font-size: 18px;
+      }
+      a:hover {
+        color: $faded-purple;
+      }
+    }
+  }
+}

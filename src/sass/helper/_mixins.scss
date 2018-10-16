@@ -1,0 +1,14 @@
+@mixin center
+{ text-align: center; }
+
+@mixin colored-background($color)
+{ background-color: $color; }
+
+@mixin colored-font($color)
+{ color: $color; }
+
+@mixin sofia-title
+{ font-family: 'Sofia'; }
+
+@mixin oswald-font 
+{ font-family: 'Oswald'; }

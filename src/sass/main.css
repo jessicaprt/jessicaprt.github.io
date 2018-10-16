@@ -1,0 +1,36 @@
+.main-nav {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px;
+  padding-top: 2vh;
+  margin-bottom: 2vh;
+  -webkit-transition: 0.4s ease !important;
+  -moz-transition: 0.4s ease !important;
+  transition: 0.4s ease !important;
+  font-size: 20px; }
+  .main-nav .navbar-header a {
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #7E6A8C; }
+  .main-nav .navbar-header a:hover {
+    font-size: 20px;
+    text-decoration: none;
+    color: rgba(126, 106, 140, 0.5); }
+  .main-nav .navbar-toggle {
+    float: none;
+    margin-right: 0;
+    border: 0;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.2) !important; }
+  .main-nav .navbar-nav li a {
+    color: #888;
+    font-size: 18px; }
+  .main-nav .navbar-nav li a:hover {
+    color: rgba(126, 106, 140, 0.5); }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Cardo', serif; }
+
+/*# sourceMappingURL=main.css.map */

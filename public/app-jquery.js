@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $(".header > .Navigation .mainNav .container .navbar-collapse .navbar-nav > .linkItem > a")
+    $(".linkItem > a")
         .on('click', function(event) {
 		var valid_hashes = ["#about-me", "#projects", "#blog", "#instagram", "#contact"];
 		if (jQuery.inArray(this.hash, valid_hashes) != -1) {
