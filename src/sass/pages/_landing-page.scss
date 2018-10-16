@@ -238,6 +238,7 @@
         margin: 0 -20px -20px 15px;
       }
     }
+
     .fblog-container {
       padding-left: 3vw;
 
@@ -248,11 +249,13 @@
           color: $purple;
           text-decoration: none; 
         }
+
         a:hover {
           color: $faded-purple;
           text-decoration: none;
         }
       }
+
       .fblog-content {
         a:hover {
           text-decoration: none;
@@ -263,10 +266,73 @@
   }
 
   .fblog-button {
-    @extend %main-button-wrapper
+    @extend %main-button-wrapper;
   }
 }
 
 /** INSTAGRAM **/
+.instagram
+{ margin: 0 auto; 
+  text-align: center; 
+  padding: 5vh 0; 
+
+  .instagram-title {
+    @include oswald-font;
+    color: $purple;
+    padding-bottom: 5vh;
+  }
+
+  ul {
+    margin: 0 auto;
+    padding-left: 0;
+  }
+
+  li {
+    display: inline-block;
+  }
+  .instagram-wrapper {
+    .instagram-post {
+      height: 18vw;
+      width: 18vw;
+      margin: 10px 5px;
+      vertical-align: 50%;
+      overflow: hidden;
+
+      img {
+        top: 0;
+        min-height: 18vw;
+        width: 18vw;
+      }
+    }
+  }
+}
 
 /** CONTACT INFO **/
+.footer {
+  padding: 5vh 0;
+  color:rgba(255,255,255,0.8); 
+  font-size: 18px; 
+  @include colored-background(#302C3A, 0.2);
+  @include oswald-font;
+
+  ul {
+    padding: 2vh 0;
+  }
+
+  .contact-icons {
+    display: inline-block;
+
+    .contact-icons-img {
+      width: 26px; 
+      margin-right: 1vw; 
+      margin-left: 0;
+    }
+  }
+
+  .white-divider {
+    height: 2px;
+    background-color: rgba(255,255,255,0.7);
+    width: 100%;
+    margin: 3vh 0;
+  }
+}

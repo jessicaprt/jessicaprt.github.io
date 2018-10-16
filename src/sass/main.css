@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Cardo', serif; }
+
 .main-nav {
   background-color: rgba(0, 0, 0, 0);
   border: 0px;
@@ -52,7 +57,7 @@
     .fprojects .fprojects-content .fprojects-button .mainButton .aButton:hover, .featured-blogs .fblog-button .mainButton .aButton:hover {
       text-decoration: none; }
     .fprojects .fprojects-content .fprojects-button .mainButton:hover, .featured-blogs .fblog-button .mainButton:hover {
-      background-color: #342C3A; }
+      background-color: #8E799E; }
 
 .loading-indicator {
   position: fixed;
@@ -254,10 +259,49 @@
         color: rgba(0, 0, 0, 0.6); }
 
 /** INSTAGRAM **/
+.instagram {
+  margin: 0 auto;
+  text-align: center;
+  padding: 5vh 0; }
+  .instagram .instagram-title {
+    font-family: 'Oswald';
+    color: #7E6A8C;
+    padding-bottom: 5vh; }
+  .instagram ul {
+    margin: 0 auto;
+    padding-left: 0; }
+  .instagram li {
+    display: inline-block; }
+  .instagram .instagram-wrapper .instagram-post {
+    height: 18vw;
+    width: 18vw;
+    margin: 10px 5px;
+    vertical-align: 50%;
+    overflow: hidden; }
+    .instagram .instagram-wrapper .instagram-post img {
+      top: 0;
+      min-height: 18vw;
+      width: 18vw; }
+
 /** CONTACT INFO **/
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Cardo', serif; }
+.footer {
+  padding: 5vh 0;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 18px;
+  background-color: rgba(48, 44, 58, 0.8);
+  font-family: 'Oswald'; }
+  .footer ul {
+    padding: 2vh 0; }
+  .footer .contact-icons {
+    display: inline-block; }
+    .footer .contact-icons .contact-icons-img {
+      width: 26px;
+      margin-right: 1vw;
+      margin-left: 0; }
+  .footer .white-divider {
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 100%;
+    margin: 3vh 0; }
 
 /*# sourceMappingURL=main.css.map */
