@@ -36,6 +36,24 @@
   .header .shrink .navbar-brand {
     font-size: 20px; }
 
+.fprojects .fprojects-content .fprojects-button, .featured-blogs .fblog-button {
+  border: 2px solid rgba(126, 106, 140, 0.5);
+  padding: 10px;
+  height: 8vh;
+  margin: 5vh auto; }
+  .fprojects .fprojects-content .fprojects-button .mainButton, .featured-blogs .fblog-button .mainButton {
+    background-color: #7e6a8c;
+    font-family: 'Oswald';
+    height: 8vh;
+    padding: 1.5vh 3vh;
+    text-align: center;
+    color: #eee;
+    font-size: 3vh; }
+    .fprojects .fprojects-content .fprojects-button .mainButton .aButton:hover, .featured-blogs .fblog-button .mainButton .aButton:hover {
+      text-decoration: none; }
+    .fprojects .fprojects-content .fprojects-button .mainButton:hover, .featured-blogs .fblog-button .mainButton:hover {
+      background-color: #342C3A; }
+
 .loading-indicator {
   position: fixed;
   background-color: rgba(0, 0, 0, 0.8);
@@ -146,17 +164,17 @@
     text-align: center; }
     .fprojects .fprojects-content .fprojects-title-container {
       position: static; }
-      .fprojects .fprojects-content .fprojects-title-container .fproject-title-inner-container {
+      .fprojects .fprojects-content .fprojects-title-container .fprojects-title-inner-container {
         position: relative;
         width: 100%;
         height: 25vh; }
-        .fprojects .fprojects-content .fprojects-title-container .fproject-title-inner-container .fprojects-line {
+        .fprojects .fprojects-content .fprojects-title-container .fprojects-title-inner-container .fprojects-line {
           position: absolute;
           height: 10px;
           width: 100%;
           margin-top: 10vh;
           background-color: rgba(126, 106, 140, 0.2); }
-        .fprojects .fprojects-content .fprojects-title-container .fproject-title-inner-container .fprojects-title-wrapper {
+        .fprojects .fprojects-content .fprojects-title-container .fprojects-title-inner-container .fprojects-title-wrapper {
           border: 2px solid rgba(126, 106, 140, 0.9);
           margin: 5vh auto;
           padding: 10px;
@@ -165,7 +183,7 @@
           margin-right: auto;
           left: 0;
           right: 0; }
-          .fprojects .fprojects-content .fprojects-title-container .fproject-title-inner-container .fprojects-title-wrapper .fprojects-title {
+          .fprojects .fprojects-content .fprojects-title-container .fprojects-title-inner-container .fprojects-title-wrapper .fprojects-title {
             font-family: 'Oswald';
             background-color: #7e6a8c;
             font-size: 6vh;
@@ -196,6 +214,45 @@
       margin-top: 5vh; }
 
 /** FEATURED BLOGS **/
+.featured-blogs {
+  padding: 5vh 0;
+  background-color: #ddd;
+  text-align: center; }
+  .featured-blogs .fblog-main-title {
+    font-family: 'Oswald';
+    font-size: 50px;
+    text-align: center;
+    color: #7E6A8C;
+    margin: 0 auto;
+    margin-bottom: 5vh;
+    border-top: 3px solid rgba(126, 106, 140, 0.5);
+    border-bottom: 3px solid rgba(126, 106, 140, 0.5);
+    width: 50vh;
+    padding: 2vh 0; }
+  .featured-blogs .fblog-item {
+    padding: 2vh;
+    text-align: left; }
+    .featured-blogs .fblog-item .fblog-image-wrapper {
+      padding: 10px 0;
+      border: 2.5px solid #fff; }
+      .featured-blogs .fblog-item .fblog-image-wrapper .fblog-images {
+        width: 100%;
+        margin: 0 -20px -20px 15px; }
+    .featured-blogs .fblog-item .fblog-container {
+      padding-left: 3vw; }
+      .featured-blogs .fblog-item .fblog-container .fblog-title {
+        margin-top: 6vh; }
+        .featured-blogs .fblog-item .fblog-container .fblog-title a {
+          font-size: 25px;
+          color: #7E6A8C;
+          text-decoration: none; }
+        .featured-blogs .fblog-item .fblog-container .fblog-title a:hover {
+          color: rgba(126, 106, 140, 0.5);
+          text-decoration: none; }
+      .featured-blogs .fblog-item .fblog-container .fblog-content a:hover {
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.6); }
+
 /** INSTAGRAM **/
 /** CONTACT INFO **/
 body {

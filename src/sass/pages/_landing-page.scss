@@ -2,6 +2,7 @@
 @import "../helpers/variables";
 
 @import "../components/navbar";
+@import "../components/button";
 @import "../components/loading-indicator";
 
 /** HEADER **/
@@ -131,7 +132,7 @@
     .fprojects-title-container {
       position: static;
   
-      .fproject-title-inner-container {
+      .fprojects-title-inner-container {
         position: relative;
         width: 100%; 
         height: 25vh; 
@@ -191,6 +192,10 @@
       }
     }
 
+    .fprojects-button {
+      @extend %main-button-wrapper;
+    }
+
     .fprojects-footer {
       text-align: center !important; 
       color: #000;
@@ -202,6 +207,65 @@
 }
 
 /** FEATURED BLOGS **/
+.featured-blogs {
+  padding: 5vh 0; 
+  background-color: #ddd;
+  text-align: center;
+  
+  .fblog-main-title {
+    @include oswald-font;
+    font-size: 50px; 
+    text-align: center;
+    color: $purple;
+    margin: 0 auto;
+    margin-bottom: 5vh;
+    border-top: 3px solid rgba(126, 106, 140, 0.5);
+    border-bottom: 3px solid rgba(126, 106, 140, 0.5);
+    width: 50vh; 
+    padding: 2vh 0
+  }
+
+  .fblog-item {
+    padding: 2vh; 
+    text-align: left;
+
+    .fblog-image-wrapper {
+      padding: 10px 0;
+      border: 2.5px solid #fff;
+
+      .fblog-images {
+        width: 100%; 
+        margin: 0 -20px -20px 15px;
+      }
+    }
+    .fblog-container {
+      padding-left: 3vw;
+
+      .fblog-title {
+        margin-top: 6vh;
+        a {
+          font-size: 25px; 
+          color: $purple;
+          text-decoration: none; 
+        }
+        a:hover {
+          color: $faded-purple;
+          text-decoration: none;
+        }
+      }
+      .fblog-content {
+        a:hover {
+          text-decoration: none;
+          color: rgba(0,0,0,0.6);
+        }
+      }
+    }
+  }
+
+  .fblog-button {
+    @extend %main-button-wrapper
+  }
+}
 
 /** INSTAGRAM **/
 

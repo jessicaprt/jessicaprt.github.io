@@ -49,39 +49,39 @@
 { height: 4px;
   background-color: #fff; }
 
-.Blog
+/* .Blog
 { padding: 5vh 0; 
   background-color: #ddd;
-  text-align: center; }
+  text-align: center; } */
 
-.Blog h1
+/* .Blog h1
 { font-size: 50px; 
-  text-align: center; }
+  text-align: center; } */
 
-.BlogItem
+/* .BlogItem
 { padding: 2vh; 
-  text-align: left; }
+  text-align: left; } */
 
-.blogTitle
+/* .blogTitle
 { margin: 0 auto;
   margin-bottom: 5vh;
   border-top: 3px solid rgba(126, 106, 140, 0.5);
   border-bottom: 3px solid rgba(126, 106, 140, 0.5);
   width: 50vh; 
-  padding: 2vh 0}
+  padding: 2vh 0} */
 
-.fBlogContainer
-{ padding-left: 3vw}
+/* .fBlogContainer
+{ padding-left: 3vw} */
 
-.fBlogImages
+/* .fBlogImages
 { width: 100%; 
-  margin: 0 -20px -20px 15px; }
+  margin: 0 -20px -20px 15px; } */
 
-.fBlogImageWrapper
+/* .fBlogImageWrapper
 { padding: 10px 0;
-  border: 2.5px solid #fff}
+  border: 2.5px solid #fff} */
 
-.fBlogTitle
+/* .fBlogTitle
 { margin-top: 6vh; }
 
 .fBlogTitle a
@@ -90,36 +90,22 @@
 
 .fBlogTitle a:hover
 { color: rgba(0,0,0,0.6); 
-  text-decoration: none; }
+  text-decoration: none; } */
 
-.fBlogContent a:hover
+/* .fBlogContent a:hover
 { text-decoration: none;
-  color: rgba(0,0,0,0.6) }
+  color: rgba(0,0,0,0.6) } */
 
-.fBlogItemsLine
+/* .fBlogItemsLine
 { height: 2px;
   background-color: rgba(126, 106, 140, 0.3);
-  margin: 4vh auto; }
+  margin: 4vh auto; } */
 
-.aButton:hover
+/* .aButton:hover
 { text-decoration: none; }
 
-.mainButtonWrapper
-{ border: 2px solid rgba(126, 106, 140, 0.5);
-  padding: 10px;
-  height: 8vh;  
-  margin: 5vh auto; }
-
-.mainButton
-{ height: 8vh; 
-  padding: 1.5vh 3vh;
-  text-align: center;
-  background-color: rgba(126, 106, 140, 1);
-  color: #eee;
-  font-size: 3vh; }
-
 .mainButton:hover
-{ background-color: #342C3A;}
+{ background-color: #342C3A;} */
 
 .instagram
 { margin: 0 auto; 

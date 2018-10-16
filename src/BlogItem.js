@@ -21,21 +21,21 @@ export class BlogItem extends Component {
 
     render() {
         return (
-            <Grid className="BlogItem">
+            <Grid className="fblog-item">
                 <Row>
                     <Col sm={4}>
-                        <div className="fBlogImageWrapper">
-                        <img 
-                            src={ this.props.route + "/images/" + this.props.image }
-                            alt={ this.props.title } 
-                            className="fBlogImages"/></div></Col>
-                    <Col sm={8} className="fBlogContainer">
-                        <p className="fBlogTitle Oswald-font">
+                        <div className="fblog-image-wrapper">
+                            <img 
+                                src={ this.props.route + "/images/" + this.props.image }
+                                alt={ this.props.title } 
+                                className="fblog-images"/></div></Col>
+                    <Col sm={8} className="fblog-container">
+                        <p className="fblog-title">
                             <a href={ "blogs/" + this.props.blogUrl } >
                             { this.props.title }</a></p>
-                        <p className="fBlogContent">
+                        <p className="fblog-bontent">
                             { this.trimContent(this.props.content) }
-                            <a href={ this.props.route + this.props.blogUrl } className="purpleFont"> ... Read more</a></p></Col>
+                            <a href={ this.props.route + this.props.blogUrl } className="purpleFont"> ...Read more</a></p></Col>
                 </Row>
             </Grid>
         );
