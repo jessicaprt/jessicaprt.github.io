@@ -92,7 +92,7 @@
 /** SKILL HIGHLIGHTS **/
 .highlights {
   padding-bottom: 8vh;
-  background-color: rgba(126, 106, 140, 0.5); }
+  background-color: rgba(126, 106, 140, 0.7); }
   .highlights .skill-highlights {
     margin: 0 auto 2vh auto;
     text-align: center; }
@@ -138,6 +138,63 @@
           padding: 0 5px; }
 
 /** FEAURED PROJECTS **/
+.fprojects {
+  color: white;
+  background-color: rgba(239, 223, 187, 0.5); }
+  .fprojects .fprojects-content {
+    padding: 5vh;
+    text-align: center; }
+    .fprojects .fprojects-content .fprojects-title-container {
+      position: static; }
+      .fprojects .fprojects-content .fprojects-title-container .fproject-title-inner-container {
+        position: relative;
+        width: 100%;
+        height: 25vh; }
+        .fprojects .fprojects-content .fprojects-title-container .fproject-title-inner-container .fprojects-line {
+          position: absolute;
+          height: 10px;
+          width: 100%;
+          margin-top: 10vh;
+          background-color: rgba(126, 106, 140, 0.2); }
+        .fprojects .fprojects-content .fprojects-title-container .fproject-title-inner-container .fprojects-title-wrapper {
+          border: 2px solid rgba(126, 106, 140, 0.9);
+          margin: 5vh auto;
+          padding: 10px;
+          position: absolute;
+          margin-left: auto;
+          margin-right: auto;
+          left: 0;
+          right: 0; }
+          .fprojects .fprojects-content .fprojects-title-container .fproject-title-inner-container .fprojects-title-wrapper .fprojects-title {
+            font-family: 'Oswald';
+            background-color: #7e6a8c;
+            font-size: 6vh;
+            padding: 2vh 5vh;
+            margin: 0 -20px -20px 0; }
+    .fprojects .fprojects-content .fprojects-container {
+      position: static;
+      padding-bottom: 15vh; }
+      .fprojects .fprojects-content .fprojects-container .fproject-item {
+        margin-top: 2vh; }
+        .fprojects .fprojects-content .fprojects-container .fproject-item .fproject-image-wrapper {
+          padding: 10px 0;
+          border: 3px solid rgba(126, 106, 140, 0.5); }
+          .fprojects .fprojects-content .fprojects-container .fproject-item .fproject-image-wrapper .fproject-images {
+            width: 100%;
+            margin: 5px -30px -40px 0; }
+        .fprojects .fprojects-content .fprojects-container .fproject-item .fproject-item-title {
+          font-family: 'Oswald';
+          margin-top: 40px;
+          color: #7e6a8c;
+          text-align: center;
+          font-size: 18px; }
+    .fprojects .fprojects-content .fprojects-footer {
+      text-align: center !important;
+      color: #000;
+      font-size: 30px;
+      position: static;
+      margin-top: 5vh; }
+
 /** FEATURED BLOGS **/
 /** INSTAGRAM **/
 /** CONTACT INFO **/

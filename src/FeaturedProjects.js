@@ -8,7 +8,7 @@ export class FeaturedProjects extends Component {
 
     renderProjects() {
         return(
-            <Row className="projectsContainer">
+            <Row className="fprojects-container">
                 <Col sm={4}><FeaturedProjectItem 
                     imgUrl={ this.props.projects.A.imgUrl }
                     title={ this.props.projects.A.name } /></Col>
@@ -24,14 +24,14 @@ export class FeaturedProjects extends Component {
 
     render() {
         return (
-            <div className="projects champagneBackground" id="projects">
+            <div className="fprojects" id="projects">
                 <Grid>
-                    <div className="projectsContent">
-                        <Row className="projectsTitleContainer">
-                            <div className="projectsTitleInnerContainer">                            
-                                <div className="projectsLine"></div>
-                                <Col sm={4} className="projectsTitleWrapper">
-                                    <div className="projectsTitle Oswald-font">Projects</div></Col></div>
+                    <div className="fprojects-content">
+                        <Row className="fprojects-title-container">
+                            <div className="fprojects-title-inner-container">                            
+                                <div className="fprojects-line"></div>
+                                <Col sm={4} className="fprojects-title-wrapper">
+                                    <div className="fprojects-title">Projects</div></Col></div>
                         </Row>
                         
                         { this.renderProjects() }

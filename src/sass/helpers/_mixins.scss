@@ -1,8 +1,8 @@
 @mixin center
 { text-align: center; }
 
-@mixin colored-background($color)
-{ background-color: $color; }
+@mixin colored-background($color, $opacity:1)
+{ background-color: fade-out($color, $opacity) }
 
 @mixin colored-font($color)
 { color: $color; }
