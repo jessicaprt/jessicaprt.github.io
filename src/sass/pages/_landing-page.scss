@@ -1,0 +1,128 @@
+@import "../helpers/mixins";
+@import "../helpers/variables";
+
+@import "../components/navbar";
+@import "../components/loading-indicator";
+
+/** HEADER **/
+.header {
+  height: 70vh;
+  margin: 0;
+  background-image: url('../assets/banner.jpg'); 
+  background-size: cover; 
+  background-position: bottom;
+
+  .shrink {
+    @extend %navbar-shrink;
+  }
+}
+
+/** ABOUT ME **/
+#about-me { 
+  background-image: url('../assets/right_geometric.png');
+  background-size: cover;
+  background-position: right;
+  color: #555; 
+  font-size: 20px;
+  padding: 8vh 0 30vh 0; 
+
+  .about-wrapper {
+    padding: 20px; 
+    border: 4px solid $purple;
+
+    .about-image {
+      background-image: url('../assets/times_square.jpg'); 
+      background-size: cover;
+      background-position: bottom;
+      height: 50vh;
+      margin: 0 -40px -40px 0; 
+    }
+  }
+
+  .about-description {
+    padding: 15vh 5vh 0 5vh; 
+
+    h1 {
+      @include oswald-font;
+      @include colored-font($purple);
+    }
+  }
+}
+
+/** SKILL HIGHLIGHTS **/
+.highlights {
+  padding-bottom: 8vh;
+  @include colored-background($faded-purple);
+
+  .skill-highlights {
+    margin: 0 auto 2vh auto; 
+    text-align: center;
+  }
+
+  .skill-border
+  { padding: 2vh; 
+    border: 1.5px solid #333;
+    margin-bottom: 8vh; }
+
+  .skill {
+    margin-top: -6vh;
+    padding: 0 3vh;
+
+    .skill-content
+    { background-color: #ddd;
+      color: #555; 
+      padding: 2vh 0; 
+      margin: 0 -4vh -4vh 0;
+
+      .skill-item {
+        text-align: left; 
+        margin: 5px 0;
+      }
+  
+      .skill-item:before {
+        content:"\2714\0020"; 
+        color: $purple; 
+        margin-right: 8px;
+      }
+
+      .skill-wrapper {
+        margin: 2vh auto;
+        border: 1.5px solid #333;
+        border-radius: 22px;
+        width: 44px;
+        height: 44px;
+
+        .skill-image {
+          padding: 0.5vh 0 0.5vh 0; 
+          height: 34px; 
+          margin-top: 4px;
+        }
+      }
+
+      .skill-name {
+        padding-top: 1vh; 
+        font-size: 30px;
+        @include oswald-font;
+      }
+
+      .skill-description {
+        padding: 0 20px; 
+        font-size: $small-font;
+
+        .skill-list {
+          list-style: none; 
+          margin-top: 2vh; 
+          padding: 0 5px;
+        }
+      }
+    }
+  }
+}
+
+/** FEAURED PROJECTS **/
+
+/** FEATURED BLOGS **/
+
+/** INSTAGRAM **/
+
+/** CONTACT INFO **/

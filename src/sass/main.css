@@ -28,6 +28,119 @@
   .main-nav .navbar-nav li a:hover {
     color: rgba(126, 106, 140, 0.5); }
 
+.header .shrink {
+  height: 8vh;
+  background-color: white;
+  box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.1);
+  padding: 2vh 5vh 7vh 5vh; }
+  .header .shrink .navbar-brand {
+    font-size: 20px; }
+
+.loading-indicator {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100vw;
+  height: 110vh;
+  margin-top: -20px;
+  z-index: 99;
+  top: 0;
+  text-align: center; }
+  .loading-indicator .loader {
+    margin: 0 auto;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -ms-transform: translateY(-40%);
+    -ms-transform: translateX(-50%);
+    transform: translateY(-40%);
+    transform: translateX(-50%); }
+
+.stopLoading {
+  display: none; }
+
+/** HEADER **/
+.header {
+  height: 70vh;
+  margin: 0;
+  background-image: url("../assets/banner.jpg");
+  background-size: cover;
+  background-position: bottom; }
+
+/** ABOUT ME **/
+#about-me {
+  background-image: url("../assets/right_geometric.png");
+  background-size: cover;
+  background-position: right;
+  color: #555;
+  font-size: 20px;
+  padding: 8vh 0 30vh 0; }
+  #about-me .about-wrapper {
+    padding: 20px;
+    border: 4px solid #7E6A8C; }
+    #about-me .about-wrapper .about-image {
+      background-image: url("../assets/times_square.jpg");
+      background-size: cover;
+      background-position: bottom;
+      height: 50vh;
+      margin: 0 -40px -40px 0; }
+  #about-me .about-description {
+    padding: 15vh 5vh 0 5vh; }
+    #about-me .about-description h1 {
+      font-family: 'Oswald';
+      color: #7E6A8C; }
+
+/** SKILL HIGHLIGHTS **/
+.highlights {
+  padding-bottom: 8vh;
+  background-color: rgba(126, 106, 140, 0.5); }
+  .highlights .skill-highlights {
+    margin: 0 auto 2vh auto;
+    text-align: center; }
+  .highlights .skill-border {
+    padding: 2vh;
+    border: 1.5px solid #333;
+    margin-bottom: 8vh; }
+  .highlights .skill {
+    margin-top: -6vh;
+    padding: 0 3vh; }
+    .highlights .skill .skill-content {
+      background-color: #ddd;
+      color: #555;
+      padding: 2vh 0;
+      margin: 0 -4vh -4vh 0; }
+      .highlights .skill .skill-content .skill-item {
+        text-align: left;
+        margin: 5px 0; }
+      .highlights .skill .skill-content .skill-item:before {
+        content: "\2714\0020";
+        color: #7E6A8C;
+        margin-right: 8px; }
+      .highlights .skill .skill-content .skill-wrapper {
+        margin: 2vh auto;
+        border: 1.5px solid #333;
+        border-radius: 22px;
+        width: 44px;
+        height: 44px; }
+        .highlights .skill .skill-content .skill-wrapper .skill-image {
+          padding: 0.5vh 0 0.5vh 0;
+          height: 34px;
+          margin-top: 4px; }
+      .highlights .skill .skill-content .skill-name {
+        padding-top: 1vh;
+        font-size: 30px;
+        font-family: 'Oswald'; }
+      .highlights .skill .skill-content .skill-description {
+        padding: 0 20px;
+        font-size: 14px; }
+        .highlights .skill .skill-content .skill-description .skill-list {
+          list-style: none;
+          margin-top: 2vh;
+          padding: 0 5px; }
+
+/** FEAURED PROJECTS **/
+/** FEATURED BLOGS **/
+/** INSTAGRAM **/
+/** CONTACT INFO **/
 body {
   margin: 0;
   padding: 0;

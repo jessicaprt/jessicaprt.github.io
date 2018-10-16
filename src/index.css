@@ -16,95 +16,9 @@
 .purpleFont
 { color: #7e6a8c }
 
-/* .navTitle
-{ margin: 30px 50px; 
-  font-size: 20px; 
-  font-weight: bold; }
-
-.navBlock
-{ display: inline-flex; }
-
-.header .Navigation .navbar-header a
-{ font-size: 20px;
-  text-decoration: none; 
-  color: #9888ae !important; 
-  font-weight: bold; }
-
-.navbar-header a:hover
-{ margin: 0px; 
-  font-size: 20px;
-  text-decoration: none; 
-  color: rgba(152, 136, 174, 0.61) !important; }
-
-.Navigation
-{ margin-bottom: 2vh; }
-
-.mainNav
-{ background-color: rgba(0,0,0,0);
-  border: 0px;
-  padding-top: 2vh; }
-
-.navbar-toggle
-{ float: none;
-  margin-right: 0; 
-  border: 0;
-  border-radius: 4px; 
-  background-color: rgba(0,0,0,0.2) !important }
-
-.navbar-inverse .navbar-nav>li>a
-{ color: #888; 
-  font-size: 18px; }
-
-.navbar-inverse .navbar-nav>li>a:hover
-{ color: rgba(152, 136, 174, 0.5); }
-
-.navbar
-{ -webkit-transition: 0.4s ease !important;
-  -moz-transition: 0.4s ease !important;
-  transition: 0.4s ease !important; } */
-
-#loadingIndicator
-{ position: fixed; 
-  background-color: rgba(0,0,0,0.8); 
-  width: 100vw; 
-  height: 110vh; 
-  margin-top: -20px;
-  z-index: 99; 
-  top: 0; 
-  text-align: center; }
-
-.ringLoader
-{ margin: 0 auto;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  -ms-transform: translateY(-40%);
-  -ms-transform: translateX(-50%);
-  transform: translateY(-40%);
-  transform: translateX(-50%);}
-
-.stopLoading
-  { display: none; }
-
 .header.Navigation.mainNav.container.navbar-header.navbar-brand
 { font-size: 25px; 
-  margin-right: 50px;}
-
-.header .shrink 
-{ height: 8vh;
-  background-color: rgba(255,255,255,1); 
-  box-shadow: 0px 1px 10px 1px rgba(0,0,0,0.1); 
-  padding: 2vh 5vh 7vh 5vh; }
-
-.shrink .navbar-brand
-{ font-size: 20px; }
-
-.header
-{ height: 70vh;
-  margin: 0;
-  background-image: url('./assets/banner.jpg'); 
-  background-size: cover; 
-  background-position: bottom }
+  margin-right: 50px; }
 
 .plainHeader
 { background-color: rgba(0,0,0,0);
@@ -131,86 +45,64 @@
 .plainHeader p
 { color: #fff; }
 
-.AboutMe
-{ background-image: url('./assets/right_geometric.png');
-  background-size: cover;
-  background-position: right;
-  color: #555; 
-  font-size: 20px;
-  padding: 8vh 0 30vh 0; }
+/* .Highlights 
+{ padding-bottom: 8vh; } */
 
-.AboutDescription
-{ padding: 15vh 5vh 0 5vh; }
-
-.AboutWrapper
-{ padding: 20px; 
-  border: 4px solid #7e6a8c; }
-
-.AboutImage
-{ background-image: url('./assets/times_square.jpg'); 
-  background-size: cover;
-  background-position: bottom;
-  height: 50vh;
-  margin: 0 -40px -40px 0; }
-
-.Highlights 
-{ padding-bottom: 8vh; }
-
-.SkillHighlights
+/* .SkillHighlights
 { margin: 0 auto 2vh auto; 
-  text-align: center; }
+  text-align: center; } */
 
-.skillBorder
+/* .skillBorder
 { padding: 2vh; 
   border: 1.5px solid #333;
-  margin-bottom: 8vh; }
+  margin-bottom: 8vh; } */
 
-.skill 
+/* .skill 
 { margin-top: -6vh;
-  padding: 0 3vh; }
+  padding: 0 3vh; } */
 
-.skillItem
+/* .skillItem
 { text-align: left; 
-  margin: 5px 0; }
+  margin: 5px 0; } */
 
-.skillComponent
-{ padding: 3px 8px; }
+/* .skillComponent
+{ padding: 3px 8px; } */
 
-.skillList
+/* .skillList
 { list-style: none; 
   margin-top: 2vh; 
-  padding: 0 5px; }
+  padding: 0 5px; } */
 
-.skillItem:before 
+/* .skillItem:before 
 { content:"\2714\0020"; 
   color: #7e6a8c; 
-  margin-right: 8px; }
+  margin-right: 8px; } */
 
-.skillContent
+/* .skillContent
 { background-color: #ddd;
   color: #555; 
   padding: 2vh 0; 
-  margin: 0 -4vh -4vh 0 }
+  margin: 0 -4vh -4vh 0 } */
 
-.skillDescription
+/* .skillDescription
 { padding: 0 20px; 
-  font-size: 14px; }
+  font-size: 14px; } */
 
-.skillName
+/* .skillName
 { padding-top: 1vh; 
-  font-size: 30px; }
+  font-size: 30px; } */
 
-.skillImage
+/* .skillImage
 { padding: 0.5vh 0 0.5vh 0; 
   height: 34px; 
-  margin-top: 4px; }
+  margin-top: 4px; } */
 
-.skillWrapper 
+/* .skill-wrapper 
 { margin: 2vh auto;
   border: 1.5px solid #333;
   border-radius: 22px;
   width: 44px;
-  height: 44px; }
+  height: 44px; } */
 
 .mainBorder
 { height: 4px;

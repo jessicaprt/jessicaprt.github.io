@@ -10,8 +10,8 @@ export class LoadingIndicator extends Component {
     }
     render() {
         return(
-            <div id="loadingIndicator" className="loadingIndicator">
-            <div className="ringLoader">
+            <div id="loadingIndicator" className="loading-indicator">
+            <div className="loader">
                 <ClipLoader
                     sizeUnit={"px"}
                     size={150}
