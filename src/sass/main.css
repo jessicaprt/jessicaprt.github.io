@@ -81,7 +81,6 @@ body {
 .stopLoading {
   display: none; }
 
-/** HEADER **/
 .header {
   height: 70vh;
   margin: 0;
@@ -89,7 +88,6 @@ body {
   background-size: cover;
   background-position: bottom; }
 
-/** ABOUT ME **/
 #about-me {
   background-image: url("../assets/right_geometric.png");
   background-size: cover;
@@ -112,7 +110,6 @@ body {
       font-family: 'Oswald';
       color: #7E6A8C; }
 
-/** SKILL HIGHLIGHTS **/
 .highlights {
   padding-bottom: 8vh;
   background-color: rgba(126, 106, 140, 0.7); }
@@ -160,7 +157,6 @@ body {
           margin-top: 2vh;
           padding: 0 5px; }
 
-/** FEAURED PROJECTS **/
 .fprojects {
   color: white;
   background-color: rgba(239, 223, 187, 0.5); }
@@ -218,9 +214,8 @@ body {
       position: static;
       margin-top: 5vh; }
 
-/** FEATURED BLOGS **/
 .featured-blogs {
-  padding: 5vh 0;
+  padding: 12vh 0;
   background-color: #ddd;
   text-align: center; }
   .featured-blogs .fblog-main-title {
@@ -258,11 +253,10 @@ body {
         text-decoration: none;
         color: rgba(0, 0, 0, 0.6); }
 
-/** INSTAGRAM **/
 .instagram {
   margin: 0 auto;
   text-align: center;
-  padding: 5vh 0; }
+  padding: 12vh 0; }
   .instagram .instagram-title {
     font-family: 'Oswald';
     color: #7E6A8C;
@@ -283,7 +277,6 @@ body {
       min-height: 18vw;
       width: 18vw; }
 
-/** CONTACT INFO **/
 .footer {
   padding: 5vh 0;
   color: rgba(255, 255, 255, 0.8);
