@@ -1,0 +1,84 @@
+.fprojects {
+  color: white;
+  @include colored-background($champagne, 0.5);
+
+  .fprojects-content {
+    padding: 5vh; 
+    text-align: center;
+
+    .fprojects-title-container {
+      position: static;
+  
+      .fprojects-title-inner-container {
+        position: relative;
+        width: 100%; 
+        height: 25vh; 
+        
+        .fprojects-line {
+          position: absolute;
+          height: 10px;
+          width: 100%;
+          margin-top: 10vh; 
+          @include colored-background($purple, 0.8);
+        }
+  
+        .fprojects-title-wrapper {
+          border: 2px solid rgba(126, 106, 140, 0.9);
+          margin: 5vh auto; 
+          padding: 10px;
+          position: absolute;
+          margin-left: auto;
+          margin-right: auto; 
+          left: 0;
+          right: 0;
+  
+          .fprojects-title {
+            @include oswald-font;
+            @include colored-background($purple, 0);
+            font-size: 6vh;
+            padding: 2vh 5vh; 
+            margin: 0 -20px -20px 0;
+          }
+        }
+      }
+    }
+
+    .fprojects-container {
+      position: static; 
+      padding-bottom: 15vh;
+
+      .fproject-item {
+        margin-top: 2vh;
+
+        .fproject-image-wrapper {
+          padding: 10px 0; 
+          border: 3px solid $faded-purple;
+
+          .fproject-images {
+            width: 100%; 
+            margin: 5px -30px -40px 0;
+          }
+        }
+        .fproject-item-title {
+          @include oswald-font;
+          margin-top: 40px; 
+          color: #7e6a8c;
+          text-align: center;
+          font-size: 18px;
+        }
+      }
+    }
+
+    .fprojects-button {
+      @extend %main-button-wrapper;
+    }
+
+    .fprojects-footer {
+      text-align: center !important; 
+      color: #000;
+      font-size: 30px;
+      position: static;
+      margin-top: 5vh;
+    }
+  }  
+}

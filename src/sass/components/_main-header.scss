@@ -1,0 +1,11 @@
+.header {
+  height: 70vh;
+  margin: 0;
+  background-image: url('../assets/banner.jpg'); 
+  background-size: cover; 
+  background-position: bottom;
+
+  .shrink {
+    @extend %navbar-shrink;
+  }
+}

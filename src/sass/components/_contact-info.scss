@@ -1,0 +1,28 @@
+.footer {
+  padding: 5vh 0;
+  color:rgba(255,255,255,0.8); 
+  font-size: 18px; 
+  @include colored-background(#302C3A, 0.2);
+  @include oswald-font;
+
+  ul {
+    padding: 2vh 0;
+  }
+
+  .contact-icons {
+    display: inline-block;
+
+    .contact-icons-img {
+      width: 26px; 
+      margin-right: 1vw; 
+      margin-left: 0;
+    }
+  }
+
+  .white-divider {
+    height: 2px;
+    background-color: rgba(255,255,255,0.7);
+    width: 100%;
+    margin: 3vh 0;
+  }
+}
