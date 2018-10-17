@@ -6,7 +6,7 @@ body {
 .main-nav {
   background-color: rgba(0, 0, 0, 0);
   border: 0px;
-  padding-top: 2vh;
+  padding: 2vh 0;
   margin-bottom: 2vh;
   -webkit-transition: 0.4s ease !important;
   -moz-transition: 0.4s ease !important;
@@ -37,9 +37,11 @@ body {
   height: 8vh;
   background-color: white;
   box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.1);
-  padding: 2vh 5vh 7vh 5vh; }
+  padding: 2vh 5vh 0 5vh; }
   .header .shrink .navbar-brand {
-    font-size: 20px; }
+    font-size: 25px;
+    margin-left: 2vh;
+    margin-bottom: 2vh; }
 
 .fprojects .fprojects-content .fprojects-button, .featured-blogs .fblog-button {
   border: 2px solid rgba(126, 106, 140, 0.5);
@@ -82,11 +84,14 @@ body {
   display: none; }
 
 .header {
-  height: 70vh;
   margin: 0;
   background-image: url("../assets/banner.jpg");
+  height: 100vh;
+  width: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom; }
+  background-position: top; }
 
 #about-me {
   background-image: url("../assets/right_geometric.png");
@@ -159,9 +164,9 @@ body {
 
 .fprojects {
   color: white;
-  background-color: rgba(239, 223, 187, 0.5); }
+  background-color: rgba(239, 223, 187, 0.5);
+  padding: 12vh 0; }
   .fprojects .fprojects-content {
-    padding: 5vh;
     text-align: center; }
     .fprojects .fprojects-content .fprojects-title-container {
       position: static; }

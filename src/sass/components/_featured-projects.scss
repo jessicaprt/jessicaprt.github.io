@@ -1,9 +1,9 @@
 .fprojects {
   color: white;
   @include colored-background($champagne, 0.5);
+  padding: $section-padding;
 
   .fprojects-content {
-    padding: 5vh; 
     text-align: center;
 
     .fprojects-title-container {
