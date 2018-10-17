@@ -1,0 +1,35 @@
+.instagram
+{ margin: 0 auto; 
+  text-align: center; 
+  padding: 12vh 0; 
+
+  .instagram-title {
+    @include oswald-font;
+    color: $purple;
+    padding-bottom: 5vh;
+  }
+
+  ul {
+    margin: 0 auto;
+    padding-left: 0;
+  }
+
+  li {
+    display: inline-block;
+  }
+  .instagram-wrapper {
+    .instagram-post {
+      height: 18vw;
+      width: 18vw;
+      margin: 10px 5px;
+      vertical-align: 50%;
+      overflow: hidden;
+
+      img {
+        top: 0;
+        min-height: 18vw;
+        width: 18vw;
+      }
+    }
+  }
+}

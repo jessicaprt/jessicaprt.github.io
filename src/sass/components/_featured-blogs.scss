@@ -1,0 +1,22 @@
+.featured-blogs {
+  padding: $section-padding; 
+  background-color: #ddd;
+  text-align: center;
+  
+  .fblog-main-title {
+    @include oswald-font;
+    font-size: 50px; 
+    text-align: center;
+    color: $purple;
+    margin: 0 auto;
+    margin-bottom: 5vh;
+    border-top: 3px solid rgba(126, 106, 140, 0.5);
+    border-bottom: 3px solid rgba(126, 106, 140, 0.5);
+    width: 50vh; 
+    padding: 2vh 0
+  }
+
+  .fblog-button {
+    @extend %main-button-wrapper;
+  }
+}

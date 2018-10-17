@@ -1,0 +1,25 @@
+.loading-indicator {
+  position: fixed; 
+  background-color: rgba(0,0,0,0.8); 
+  width: 100vw; 
+  height: 110vh; 
+  margin-top: -20px;
+  z-index: 99; 
+  top: 0; 
+  text-align: center;
+
+  .loader { 
+    margin: 0 auto;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -ms-transform: translateY(-40%);
+    -ms-transform: translateX(-50%);
+    transform: translateY(-40%);
+    transform: translateX(-50%); 
+  }
+}
+
+.stopLoading { 
+  display: none; 
+}

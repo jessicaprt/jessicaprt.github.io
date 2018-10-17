@@ -1,0 +1,14 @@
+
+@import "../components/plain-header";
+@import "../components/contact-info";
+@import "../components/footer";
+
+.all-blogs {
+  padding-top: 12vh;
+  
+  .all-blogs-title { 
+  @include oswald-font;
+  text-align: center; 
+  color: $purple;
+  }
+}

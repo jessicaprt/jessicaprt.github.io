@@ -77,12 +77,12 @@ export class FeaturedBlogs extends Component {
     render() {
 
         return(
-            <div className="Blog" id="blog">
-                <Grid> <h1 className="Oswald-font blogTitle purpleFont">Blog</h1>
+            <div className="featured-blogs" id="blog">
+                <Grid> <h1 className="fblog-main-title">Blog</h1>
                     { this.renderBlog(this.state.blogs) }
 
                     <Row><Col sm={4} smOffset={4}>
-                    <div className="mainButtonWrapper">
+                    <div className="fblog-button">
                         <a href="/blogs/all_blogs" className="aButton">
                             <div className="mainButton Oswald-font">- View all Blogs -</div></a></div>
                         </Col></Row>

@@ -20,10 +20,10 @@ export class BlogContent extends Component {
     render() {
         return (
         <Grid>
-            <h1 className="Oswald-font blogPageTitle">{ this.props.title }</h1>
-            <p className="blogContentDate Oswald-font"> created: { this.formatDate(this.props.date) }</p>
+            <h1 className="blog-page-title">{ this.props.title }</h1>
+            <p className="blog-content-date"> created: { this.formatDate(this.props.date) }</p>
             { this.props.content.map((par) => 
-                <p className="blogContentPar">{ par } </p>) }
+                <p className="blog-content-par">{ par } </p>) }
         </Grid>);
     }
 }

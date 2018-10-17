@@ -19,12 +19,12 @@ export class Instagram extends Component {
     render() {
         return (
         <div className="instagram" id="instagram">
-            <h1 className="Oswald-font instagramTitle purpleFont">Instagram</h1>
+            <h1 className="instagram-title">Instagram</h1>
             
-            <div className="instagramWrapper">
+            <div className="instagram-wrapper">
                 <ul>
                     { this.state.instagram.slice(0,3).map(post => 
-                        <li className="instagramPosts" key={post.created_time} >
+                        <li className="instagram-post" key={post.created_time} >
                         <img 
                             src={post.images.standard_resolution.url} 
                             alt={post.created_time}/> </li>)}
@@ -32,7 +32,7 @@ export class Instagram extends Component {
 
                 <ul>
                     { this.state.instagram.slice(3,6).map(post => 
-                        <li className="instagramPosts" key={post.created_time} >
+                        <li className="instagram-post" key={post.created_time} >
                         <img 
                             src={post.images.standard_resolution.url}
                             alt={post.created_time} /> </li>)}

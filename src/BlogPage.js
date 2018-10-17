@@ -7,7 +7,7 @@ import { Footer } from './Footer';
 export class BlogPage extends Component {
     render() {
         return (
-            <div className="blogPage">
+            <div className="blog-page">
                 <PlainHeader />
                 <BlogHeader 
                     imgUrl = { this.props.blog.blog_image }/>

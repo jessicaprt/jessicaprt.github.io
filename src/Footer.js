@@ -8,7 +8,7 @@ export class Footer extends Component {
 
     render() {
         return (
-            <div className="footer mainFooter">
+            <div className="main-footer">
                     <div className="whiteDivider"></div>
                     { this.renderDate() }
             </div>

@@ -1,0 +1,61 @@
+.projects-page {
+  .projects-page-title {
+    @include oswald-font;
+    color: $purple;
+    text-align: center;
+    margin-top: 12vh;
+  }
+
+  .filter-input { 
+    display: inline-block; 
+  }
+
+  .active-filters {
+    @extend .filter-input;
+    margin: 0 2vh;
+
+    .active-tag {
+      @include oswald-font;
+      @include colored-background($champagne, 0.5);
+      display: inline-block;
+      border-radius: 14px;
+      padding: 5px 15px; 
+      margin: 0 10px;
+
+      .remove-tag-button {
+        margin-left: 10px;
+        background-color: rgba(239, 223, 187, 0);
+        border: 0px;
+      }
+    }
+  }
+
+  .filtered-projects {
+    margin-top: 3vh; 
+    margin-bottom: 15vh;
+
+    .project-page-item {
+      padding: 4vh 0; 
+      border-bottom: 1px solid #000;
+
+      .project-page-wrapper {
+        border: 5px solid rgba(239, 223, 187, 0.5);
+        width: 70%; 
+        padding: 15px;
+
+        .project-page-image {
+          width: 100%; 
+          border: 1px solid rgba(126, 106, 140, 0.7); 
+          margin-bottom: -30px;
+        }
+      }
+
+      .project-page-content {
+        .project-page-item-title {
+          @include oswald-font;
+          color: $purple;
+        }
+      }
+    }
+  }
+}

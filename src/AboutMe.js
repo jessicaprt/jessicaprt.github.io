@@ -6,16 +6,16 @@ import Col from 'react-bootstrap/lib/Col';
 export class AboutMe extends Component {
     render() {
         return (
-            <div className="AboutMe" id="about-me">
+            <div id="about-me">
                 <Grid className="description">
                     <Row>
-                        <Col sm={4} className="AboutImageContainer">
-                            <div className="AboutWrapper">
-                                <div className="AboutImage"></div></div></Col>
+                        <Col sm={4}>
+                            <div className="about-wrapper">
+                                <div className="about-image"></div></div></Col>
                         
                         <Col sm={8}>
-                            <div className="AboutDescription">
-                                <h1 className="Oswald-font purpleFont">About Me</h1>
+                            <div className="about-description">
+                                <h1>About Me</h1>
                                 <p>{this.props.content}</p></div></Col>
                         
                     </Row>

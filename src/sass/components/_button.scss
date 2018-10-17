@@ -1,0 +1,23 @@
+%main-button-wrapper
+{ border: 2px solid $faded-purple;
+  padding: 10px;
+  height: 8vh;  
+  margin: 5vh auto; 
+
+  .mainButton { 
+    @include colored-background($purple, 0);
+    @include oswald-font;
+    height: 8vh; 
+    padding: 1.5vh 3vh;
+    text-align: center;
+    color: #eee;
+    font-size: 3vh;
+    
+    .aButton:hover { 
+      text-decoration: none; 
+    }
+    
+    &:hover
+    { background-color: #8E799E; }
+  }
+}
