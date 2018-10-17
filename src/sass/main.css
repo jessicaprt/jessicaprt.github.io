@@ -386,4 +386,42 @@ body {
   .blog-page .blog-content-par {
     text-indent: 30px; }
 
+.projects-page .projects-page-title {
+  font-family: 'Oswald';
+  color: #7E6A8C;
+  text-align: center;
+  margin-top: 12vh; }
+.projects-page .filter-input, .projects-page .active-filters {
+  display: inline-block; }
+.projects-page .active-filters {
+  margin: 0 2vh; }
+  .projects-page .active-filters .active-tag {
+    font-family: 'Oswald';
+    background-color: rgba(239, 223, 187, 0.5);
+    display: inline-block;
+    border-radius: 14px;
+    padding: 5px 15px;
+    margin: 0 10px; }
+    .projects-page .active-filters .active-tag .remove-tag-button {
+      margin-left: 10px;
+      background-color: rgba(239, 223, 187, 0);
+      border: 0px; }
+.projects-page .filtered-projects {
+  margin-top: 3vh;
+  margin-bottom: 15vh; }
+  .projects-page .filtered-projects .project-page-item {
+    padding: 4vh 0;
+    border-bottom: 1px solid #000; }
+    .projects-page .filtered-projects .project-page-item .project-page-wrapper {
+      border: 5px solid rgba(239, 223, 187, 0.5);
+      width: 70%;
+      padding: 15px; }
+      .projects-page .filtered-projects .project-page-item .project-page-wrapper .project-page-image {
+        width: 100%;
+        border: 1px solid rgba(126, 106, 140, 0.7);
+        margin-bottom: -30px; }
+    .projects-page .filtered-projects .project-page-item .project-page-content .project-page-item-title {
+      font-family: 'Oswald';
+      color: #7E6A8C; }
+
 /*# sourceMappingURL=main.css.map */

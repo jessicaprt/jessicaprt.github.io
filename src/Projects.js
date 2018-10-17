@@ -56,12 +56,12 @@ export class Projects extends Component {
     renderActiveTags(active_tags) {
         return (
             (active_tags.length !== 0) ? 
-                <ul className="activeFilters filterInput">
+                <ul className="active-filters">
                     { active_tags.map((tag) =>
-                        <li className="activeTag Oswald-font"
+                        <li className="active-tag"
                             key={tag}>{ tag }
                             <button 
-                                className="removeTagButton"
+                                className="remove-tag-button"
                                 text={tag + " x"}
                                 onClick={() => this.handleClick(tag)}>x</button></li>) }
             </ul> : null
@@ -83,7 +83,7 @@ export class Projects extends Component {
         console.log(projects);
 
         return(
-            <div className="filteredProjects">
+            <div className="filtered-projects">
                 { projects.map((proj) =>
                     <ProjectItem
                         key={ proj.name }
@@ -136,16 +136,16 @@ export class Projects extends Component {
 
     render() {
         return(
-        <div className="ProjectsPage">
+        <div className="projects-page">
             { (this.state.projects.length !== 0) ?
                 <div>
                     <PlainHeader />
                     <Grid>
                         <div>
-                            <h1 className="projectsPageTitle Oswald-font purpleFont">Projects</h1>
+                            <h1 className="projects-page-title">Projects</h1>
                             
                             <DropdownButton
-                                className="filterInput filterDropdown"
+                                className="filter-input"
                                 bsStyle='default'
                                 title="select a filter"
                                 id="dropdown-basic">

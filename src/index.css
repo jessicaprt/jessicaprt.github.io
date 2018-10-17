@@ -5,28 +5,18 @@
 { height: 4px;
   background-color: #fff; }
 
-/* .blogContentPar
-{ text-indent: 30px; } */
-
-/* .blogContentDate
-{ font-size: 20px;
-  text-align: center; 
-  margin-bottom: 5vh; } */
-
-/** end BLOG PAGES **/
-
 /** PROJECTS PAGE **/
-.ProjectsPage
+/* .ProjectsPage
 { padding-top: 13vh; }
-  
+
 .projectsPageTitle
-{ text-align: center }
+{ text-align: center } */
 
-.activeFilters
-{ margin: 0 2vh; }
+/* .activeFilters
+{ margin: 0 2vh; } */
 
-.filterInput 
-{ display: inline-block; }
+/* .filterInput 
+{ display: inline-block; } */
 
 .dropdown-menu
 { padding: 0 15px; }
@@ -35,35 +25,35 @@
 { padding: 2px 0; 
   color: #000;}
 
-.activeTag
+/* .activeTag
 { display: inline-block;
   border-radius: 14px;
   background-color: rgba(239, 223, 187, 0.5);
   padding: 5px 15px; 
-  margin: 0 10px; }
+  margin: 0 10px; } */
 
-.removeTagButton
+/* .removeTagButton
 { margin-left: 10px;
   background-color: rgba(239, 223, 187, 0);
-  border: 0px;  }
+  border: 0px;  } */
 
-.filteredProjects
+/* .filteredProjects
 { margin-top: 3vh; 
-  margin-bottom: 15vh; }
+  margin-bottom: 15vh; } */
 
-.mProjectWrapper 
+/* .mProjectWrapper 
 { border: 5px solid rgba(239, 223, 187, 0.5);
   width: 70%; 
-  padding: 15px }
+  padding: 15px } */
 
-.filteredProjects img
+/* .filteredProjects img
 { width: 100%; 
   border: 1px solid rgba(126, 106, 140, 0.7); 
-  margin-bottom: -30px; }
+  margin-bottom: -30px; } */
 
-.mProjectsItem
+/* .mProjectsItem
 { padding: 4vh 0; 
-  border-bottom: 1px solid #000; }
+  border-bottom: 1px solid #000; } */
 
 
 /** end PROJECTS PAGE **/
