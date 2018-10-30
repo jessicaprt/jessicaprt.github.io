@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+
 .header {
   margin: 0;
   background-image: url('../assets/banner.jpg');
@@ -7,6 +9,14 @@
   background-repeat: no-repeat;
   background-size: cover; 
   background-position: top;
+
+  .header-title 
+  { font-size: 150px; 
+    text-align: center; 
+    margin-top: 13vh; 
+    font-family: 'Shadows Into Light', cursive;; 
+    color: $purple; 
+    opacity: 0.6;}
 
   .shrink {
     @extend %navbar-shrink;

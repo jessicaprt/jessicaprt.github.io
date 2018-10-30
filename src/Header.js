@@ -6,6 +6,7 @@ export class Header extends Component {
         return (
             <div className="header" id="header">
                 <NavBar />
+                <div className="header-title">Jessica Prieto</div>
             </div>
         );
     }
